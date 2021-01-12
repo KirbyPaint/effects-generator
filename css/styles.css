@@ -7,6 +7,15 @@ html, body {
   height: 100%;
 }
 
+li {
+  list-style: none;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+}
+
 .table-header {
   text-align: center;
   color: white;
