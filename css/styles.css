@@ -1,3 +1,7 @@
+#text {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,7 +17,12 @@ li {
 }
 
 img {
+  cursor: pointer;
   width: 100px;
+}
+
+img:hover {
+  background-color: #FF00FF;
 }
 
 .column-border {
