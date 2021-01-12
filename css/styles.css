@@ -22,7 +22,9 @@ img {
 }
 
 img:hover {
-  background-color: #FF00FF;
+  /* opacity: 0.6; */
+  border: 10px solid black;
+  border-radius: 256px;
 }
 
 .backing-image {
