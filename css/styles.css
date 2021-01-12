@@ -25,6 +25,10 @@ img:hover {
   background-color: #FF00FF;
 }
 
+.backing-image {
+  background-image: url("../img/bg.jpg");
+}
+
 .column-border {
   border: 6px solid black;
   border-radius: 25px;
