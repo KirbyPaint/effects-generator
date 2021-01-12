@@ -29,6 +29,10 @@ img:hover {
   background-image: url("../img/bg.jpg");
 }
 
+.fumble-image {
+  background-image: url("../img/critfumble.jpg");
+}
+
 .column-border {
   border: 6px solid black;
   border-radius: 25px;
