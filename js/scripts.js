@@ -1,13 +1,7 @@
 $(document).ready(function() {
-  $("button#hello").click(function() {
-    $("ul").prepend("<li>Hello!</li>");
-  });
+  $("form#form").submit(function(event) {
+    $("#text").show();
 
-  $("button#goodbye").click(function() {
-    $("ul").prepend("<li>Goodbye!</li>");
-  });
-
-  $("button#stop").click(function() {
-    $("ul").prepend("<li>Stop copying me!</li>");
+    event.preventDefault();
   });
 });
