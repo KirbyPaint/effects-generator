@@ -16,6 +16,12 @@ img {
   width: 100px;
 }
 
+.column-border {
+  border: 6px solid black;
+  border-radius: 25px;
+  padding-bottom: 15px;
+}
+
 .table-header {
   text-align: center;
   color: white;
