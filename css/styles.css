@@ -22,12 +22,19 @@ img {
   padding-bottom: 15px;
 }
 
+.row-border {
+  border: 3px solid black;
+  border-radius: 25px;
+  padding-bottom: 15px;
+}
+
 .table-header {
   text-align: center;
   color: white;
   background-color: black;
   border: 5px solid white;
   border-radius: 25px;
+  line-height: normal;
 }
 
 .center {
