@@ -72,8 +72,8 @@ $(document).ready(function() {
   });
 
   $("button#btnG_Ranged").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["FUMBLE/RANGED TEXT",
+    // FUMBLE/RANGED Table
+    const g_ranged = ["FUMBLE/RANGED TEXT",
     "FUMBLE/RANGED TEXT",
     "FUMBLE/RANGED TEXT",
     "FUMBLE/RANGED TEXT",
@@ -126,7 +126,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = g_ranged[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -139,8 +139,8 @@ $(document).ready(function() {
   });
 
   $("button#btnG_Natural").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["FUMBLE/NATURAL TEXT",
+    // FUMBLE/NATURAL Table
+    const g_natural = ["FUMBLE/NATURAL TEXT",
     "FUMBLE/NATURAL TEXT",
     "FUMBLE/NATURAL TEXT",
     "FUMBLE/NATURAL TEXT",
@@ -193,7 +193,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = g_natural[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -206,8 +206,8 @@ $(document).ready(function() {
   });
 
   $("button#btnG_Magic").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["FUMBLE/MAGIC TEXT",
+    // FUMBLE/MAGIC Table
+    const g_magic = ["FUMBLE/MAGIC TEXT",
     "FUMBLE/MAGIC TEXT",
     "FUMBLE/MAGIC TEXT",
     "FUMBLE/MAGIC TEXT",
@@ -260,7 +260,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = g_magic[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -273,8 +273,8 @@ $(document).ready(function() {
   });
 
   $("button#btnB_Slashing").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["MINOR/SLASHING TEXT",
+    // MINOR/SLASHING Table
+    const b_slashing = ["MINOR/SLASHING TEXT",
     "MINOR/SLASHING TEXT",
     "MINOR/SLASHING TEXT",
     "MINOR/SLASHING TEXT",
@@ -327,7 +327,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = b_slashing[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -340,8 +340,8 @@ $(document).ready(function() {
   });
 
   $("button#btnB_Piercing").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["MINOR/PIERCING TEXT",
+    // MINOR/PIERCING Table
+    const b_piercing = ["MINOR/PIERCING TEXT",
     "MINOR/PIERCING TEXT",
     "MINOR/PIERCING TEXT",
     "MINOR/PIERCING TEXT",
@@ -394,7 +394,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = b_piercing[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -407,7 +407,7 @@ $(document).ready(function() {
   });
 
   $("button#btnB_Bludgeoning").click(function() {
-    // Minor/Bludgeoning Table
+    // MINOR/BLUDGEONING TABLE
     const b_bludgeoning = ["2 For 1<br>Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.", 
     "And Stay Down!<br>Target suffers maximum damage and is knocked prone.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.", 
     "Armor Dent<br>Target suffers maximum damage and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.", 
@@ -474,8 +474,8 @@ $(document).ready(function() {
   });
 
   $("button#btnB_Magic").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["MINOR/MAGIC TEXT",
+    // MINOR/MAGIC Table
+    const b_magic = ["MINOR/MAGIC TEXT",
     "MINOR/MAGIC TEXT",
     "MINOR/MAGIC TEXT",
     "MINOR/MAGIC TEXT",
@@ -528,7 +528,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = b_magic[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -541,8 +541,8 @@ $(document).ready(function() {
   });
 
   $("button#btnM_Slashing").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["MAJOR/SLASHING TEXT",
+    // MAJOR/SLASHING TABLE
+    const m_slashing = ["MAJOR/SLASHING TEXT",
     "MAJOR/SLASHING TEXT",
     "MAJOR/SLASHING TEXT",
     "MAJOR/SLASHING TEXT",
@@ -595,7 +595,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = m_slashing[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -608,8 +608,8 @@ $(document).ready(function() {
   });
 
   $("button#btnM_Piercing").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["MAJOR/PIERCING TEXT",
+    // MAJOR/PIERCING Table
+    const m_piercing = ["MAJOR/PIERCING TEXT",
     "MAJOR/PIERCING TEXT",
     "MAJOR/PIERCING TEXT",
     "MAJOR/PIERCING TEXT",
@@ -662,7 +662,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = m_piercing[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -675,8 +675,8 @@ $(document).ready(function() {
   });
 
   $("button#btnM_Bludgeoning").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["MAJOR/BLUDGEONING TEXT",
+    // MAJOR/BLUDGEONING Table
+    const m_bludgeoning = ["MAJOR/BLUDGEONING TEXT",
     "MAJOR/BLUDGEONING TEXT",
     "MAJOR/BLUDGEONING TEXT",
     "MAJOR/BLUDGEONING TEXT",
@@ -729,7 +729,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = m_bludgeoning[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -742,8 +742,8 @@ $(document).ready(function() {
   });
 
   $("button#btnM_Magic").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["MAJOR/MAGIC TEXT",
+    // MAJOR/MAGIC Table
+    const m_magic = ["MAJOR/MAGIC TEXT",
     "MAJOR/MAGIC TEXT",
     "MAJOR/MAGIC TEXT",
     "MAJOR/MAGIC TEXT",
@@ -796,7 +796,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = m_magic[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -809,8 +809,8 @@ $(document).ready(function() {
   });
 
   $("button#btnS_Slashing").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["SEVERE/SLASHING TEXT",
+    // SEVERE/SLASHING Table
+    const s_slashing = ["SEVERE/SLASHING TEXT",
     "SEVERE/SLASHING TEXT",
     "SEVERE/SLASHING TEXT",
     "SEVERE/SLASHING TEXT",
@@ -863,7 +863,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = s_slashing[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -876,8 +876,8 @@ $(document).ready(function() {
   });
 
   $("button#btnS_Piercing").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["SEVERE/PIERCING TEXT",
+    // SEVERE/PIERCING Table
+    const s_piercing = ["SEVERE/PIERCING TEXT",
     "SEVERE/PIERCING TEXT",
     "SEVERE/PIERCING TEXT",
     "SEVERE/PIERCING TEXT",
@@ -930,7 +930,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = s_piercing[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -943,8 +943,8 @@ $(document).ready(function() {
   });
 
   $("button#btnS_Bludgeoning").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["SEVERE/BLUDGEONING TEXT",
+    // SEVERE/BLUDGEONING Table
+    const s_bludgeoning = ["SEVERE/BLUDGEONING TEXT",
     "SEVERE/BLUDGEONING TEXT",
     "SEVERE/BLUDGEONING TEXT",
     "SEVERE/BLUDGEONING TEXT",
@@ -997,7 +997,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = s_bludgeoning[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
@@ -1010,8 +1010,8 @@ $(document).ready(function() {
   });
 
   $("button#btnS_Magic").click(function() {
-    // SEVERITY/TYPE Table
-    const s_t = ["SEVERE/MAGIC TEXT",
+    // SEVERE/MAGIC Table
+    const s_magic = ["SEVERE/MAGIC TEXT",
     "SEVERE/MAGIC TEXT",
     "SEVERE/MAGIC TEXT",
     "SEVERE/MAGIC TEXT",
@@ -1064,7 +1064,7 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const title = s_t[randomNumber];
+    const title = s_magic[randomNumber];
     $("#text").prepend(title + "<br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
