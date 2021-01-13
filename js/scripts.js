@@ -4,7 +4,7 @@ function getRandomInt(max) {
 
 $(document).ready(function() {
 
-  $("button#btnX_X").click(function() {
+  $("button#btnG_Melee").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -71,7 +71,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnG_Ranged").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -138,7 +138,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnG_Natural").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -205,7 +205,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnG_Magic").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -272,7 +272,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnB_Slashing").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -339,7 +339,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnB_Piercing").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -473,7 +473,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnB_Magic").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -540,7 +540,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnM_Slashing").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -607,7 +607,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnM_Piercing").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -674,7 +674,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnM_Bludgeoning").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -741,7 +741,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnM_Magic").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -808,7 +808,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnS_Slashing").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -875,7 +875,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnS_Piercing").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -942,7 +942,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnS_Bludgeoning").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
@@ -1009,7 +1009,7 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-  $("button#btnX_X").click(function() {
+  $("button#btnS_Magic").click(function() {
     // SEVERITY/TYPE Table
     const s_t = ["",
     "",
