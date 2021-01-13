@@ -4,6 +4,408 @@ function getRandomInt(max) {
 
 $(document).ready(function() {
 
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
   $("button#btnB_Bludgeoning").click(function() {
     // Minor/Bludgeoning Table
     const b_bludgeoning = ["2 For 1<br>Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.", 
@@ -71,7 +473,608 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
 
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
+
+  $("button#btnX_X").click(function() {
+    // SEVERITY/TYPE Table
+    const s_t = ["",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ];
+
+    const randomNumber = getRandomInt(50);
+    const title = s_t[randomNumber];
+    $("#text").prepend(title + "<br><br><br>");
+
+    // for (let i = 0; i < 50; i++) {
+    //   let demo = b_bludgeoning[i];
+    //   $("#text").prepend(demo + "<br><br><br>");
+    // }
+
+    $("#text").show();
+    event.preventDefault();
+  });
 
 
   $("form#form").submit(function(event) {
