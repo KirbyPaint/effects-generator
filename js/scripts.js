@@ -4,7 +4,8 @@ function getRandomInt(max) {
 
 $(document).ready(function() {
   $("form#form").submit(function(event) {
-    const g_melee = ["2 For 1<br>Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.", 
+    // Minor/Bludgeoning Table
+    const b_bludgeoning = ["2 For 1<br>Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.", 
     "And Stay Down!<br>Target suffers maximum damage and is knocked prone.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.", 
     "Armor Dent<br>Target suffers maximum damage and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.", 
     "Back Breaker<br>Target suffers maximum plus bonus damage and 1d4 Dex damage.<br>Save: DC 20 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.", 
@@ -56,11 +57,15 @@ $(document).ready(function() {
     "Where Am I?<br>Target suffers maximum damage and is dazed for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead."
     ];
 
-    const randomNumber = getRandomInt(6);
+    // const randomNumber = getRandomInt(50);
+    // const title = b_bludgeoning[randomNumber];
+    // $("#text").prepend(title + "<br><br><br>");
 
-    const title = g_melee[randomNumber];
+    for (let i = 0; i < 50; i++) {
+      let demo = b_bludgeoning[i];
+      $("#text").prepend(demo + "<br><br><br>");
+    }
 
-    $("#text").prepend(title + "<br><br><br>");
     $("#text").show();
     event.preventDefault();
   });
