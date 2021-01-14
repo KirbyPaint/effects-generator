@@ -2,6 +2,11 @@
   display: none;
 }
 
+#text p {
+  border: 2px solid black;
+  padding: 5px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -25,6 +30,22 @@ img:hover {
   /* opacity: 0.6; */
   border: 10px solid black;
   border-radius: 256px;
+}
+
+.gray {
+  background-color: rgb(136, 136, 136);
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.yellow {
+  background-color: rgb(236, 238, 144);
+}
+
+.red {
+  background-color: rgb(238, 144, 144);
 }
 
 .backing-image {
