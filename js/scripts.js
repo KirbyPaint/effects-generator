@@ -59,11 +59,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = g_melee[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"gray\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -126,11 +126,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = g_ranged[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"gray\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -193,11 +193,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = g_natural[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"gray\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -260,11 +260,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = g_magic[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"gray\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -327,11 +327,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = b_slashing[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"green\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -394,11 +394,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = b_piercing[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"green\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -461,11 +461,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = b_bludgeoning[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"green\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -528,11 +528,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = b_magic[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"green\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -595,11 +595,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_slashing[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -662,11 +662,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_piercing[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -729,11 +729,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_bludgeoning[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = m_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -796,11 +796,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_magic[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -863,11 +863,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_slashing[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"red\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -930,11 +930,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_piercing[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"red\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -997,11 +997,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_bludgeoning[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = s_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"red\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
@@ -1064,11 +1064,11 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_magic[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + title + "</p><br><br><br>");
+    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"red\">" + title + "</p><br><br><br>");
+    //   $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p><br><br><br>");
     // }
 
     $("#text").show();
