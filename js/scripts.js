@@ -3,6 +3,8 @@ function getRandomInt(max) {
 }
 
 $(document).ready(function() {
+  $('[data-toggle="tooltip"]').tooltip()
+  
   $("button#btnG_Melee").click(function() {
     // Fumble/Melee Table
     const g_melee = ["FUMBLE/MELEE TEXT",
