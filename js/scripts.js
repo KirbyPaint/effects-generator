@@ -273,69 +273,69 @@ $(document).ready(function() {
 
   $("button#btnB_Slashing").click(function() {
     // MINOR/SLASHING Table
-    const b_slashing = ["Across the Eyes",
-    "Armor Damage",
-    "Bad Parry",
-    "Badly Hacked Ear",
-    "Bewildering Display",
-    "Broad Swipe",
-    "Broken Jaw",
-    "Brow Cut",
-    "Brow to Chin",
-    "Cracked Spine",
-    "Cut Straps",
-    "Delayed Wound",
-    "Disembowel",
-    "Fingertipped",
-    "Flat Blade Thwack",
-    "Flay",
-    "Gory Wound",
-    "Gut Slash",
-    "Hack and Slash",
-    "Hacked Digits",
-    "Hacked Hand",
-    "Hamstring",
-    "Humiliating Cut",
-    "Knockback",
-    "Lean Into the Blow",
-    "Leg Swipe",
-    "Lip Cut",
-    "Long Bloody Gash",
-    "Momentum",
-    "Muscle Wound",
-    "Neck Cut",
-    "Nerve Slice",
-    "Overhand Chop",
-    "Pain and Simple",
-    "Paper Cut",
-    "Parrying Strike",
-    "Rupture Abdominal Cavity",
-    "Sapping Slash",
-    "Severed Tendon",
-    "Spun Around",
-    "Stand Aside",
-    "Surprise Opening",
-    "Swing Through",
-    "Tangled",
-    "Terrible Gash",
-    "Throat Slash",
-    "Ugly Wound",
-    "We’ve Got A Bleeder!",
-    "Weapon Strike",
-    "Wide Open"    
+    const b_slashing = ["Across the Eyes<br>Target suffers maximum damage and is blinded for 1d4 minutes.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 10 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%). A DC 20 heal check will fully repair eyesight to normal levels.",
+    "Armor Damage<br>Target suffers maximum damage and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
+    "Bad Parry<br>Target suffers maximum damage and is disarmed (1 item).<br>Save: A DC 20 Dexterity negates the disarm; deals bonus damage instead.<br>Recover: Target must expend a move-equivalent action to retrieve its item. This provokes attacks of opportunity from all threatening opponents. <br>Special: If target is not holding any items, deal additional bonus damage instead.",
+    "Badly Hacked Ear<br>Target suffers maximum damage and 1 Cha damage. Target also suffers a -2 penalty on Perception checks until healed.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.<br>Heal: A DC 10 Heal check halves the Perception check penalties, while a DC 20 removes them. Rest or restorative magic is required to heal ability damage.",
+    "Bewildering Display<br>Target suffers maximum damage and a -2 penalty to Defense rolls for 1d2 rounds.<br>Save: A DC 20 Resolve negates; deals additional bonus damage instead.<br>Recover: You may make a Resolve save each round to attempt to negate the penalty",
+    "Broad Swipe<br>Target suffers maximum damage and 1d6 bleed.<br>Save: A DC 20 Constitution halves the bleed effect.<br>Heal: A DC 10 Heal check halves the bleed effect; a DC 20 Heal check ends it",
+    "Broken Jaw<br>Target suffers maximum damage and 1 Con damage. Target has a 25% chance of spell failure (-5 to spell casting rolls) with verbal components until healed.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or curative magic.",
+    "Brow Cut<br>Target suffers maximum damage and 1d4 bleed. Target blinded while bleeding.<br>Save: A DC 20 Dexterity negates blindness and halves bleed effect; deals bonus damage instead.<br>Heal: A DC 10 Heal check removes either blindness or bleed; a DC 20 Heal check removes both.",
+    "Brow to Chin<br>Target suffers maximum damage and 1 Con and Cha damage. Target also suffers a -2 Penalty to Perception checks and ranged attacks until healed.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the penalties to Perception and ranged attacks.",
+    "Cracked Spine<br>Target suffers maximum damage and 1d6 Dex damage.<br>Save: A DC 20 Constitution halves Dex damage.<br>Heal: Rest or restorative magic.",
+    "Cut Straps<br>Target suffers maximum damage, its movement is reduced by 10’, and the target’s armor check penalty is doubled until repaired.<br>Save: A DC 20 Dexterity avoids movement effect and armor check penalties; deals bonus damage instead.<br>Repair: A Craft (Armor) DC 20 repairs armor and removes penalties.",
+    "Delayed Wound<br>Target suffers maximum damage as bleed damage.<br>Save: A DC 20 Constitution halves the bleed effect.<br>Heal: A DC 10 Heal check halves bleed effect; a DC 20 Heal check removes bleed effect.",
+    "Disembowel<br>Target suffers maximum damage plus bonus damage again, 1d2 Con damage, and 1d4 bleed.<br>Save: A DC 20 Constitution halves the Con damage and bleed (minimum 1).<br>Heal: A DC 10 Heal check halves the bleed effect; a DC 20 Heal check negates the bleed effect. Rest or restorative magic is needed to heal ability damage.",
+    "Fingertipped<br>Target suffers maximum damage and 1d2 Dex damage. Target cannot use hand until healed.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Heal: A DC 10 Heal check allows usage of hand, albeit with a -4 penalty to all rolls. A DC 20 Heal check repairs the hand’s use. Rest or restorative magic is needed to heal ability damage.<br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
+    "Flat Blade Thwack<br>Target suffers maximum damage plus double bonus damage again and is staggered for 1 round, but all damage is non-lethal.<br>Save: A DC 20 Constitution save negates stunned condition and halves additional bonus damage.<br>Heal: Rest or curative magic.",
+    "Flay<br>Target suffers maximum damage plus 1d3 Str damage.<br>Save: A DC 20 Constitution negates Str damage; deals bonus damage instead.<br>Heal: Rest or restorative magic.",
+    "Gory Wound<br>Target suffers maximum damage and is sickened for 1d4 rounds.<br>Save: A DC 20 Constitution save negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the sickened condition.",
+    "Gut Slash<br>Target suffers maximum plus bonus damage again and 1d4 bleed. Target cannot swallow whole until healed.<br>Save: A DC 20 Constitution halves the bleed effect (minimum 1).<br>Heal: A DC 10 Heal check halves the bleed effect; a DC 20 Heal check ends it.",
+    "Hack and Slash<br>Target suffers maximum damage and you gain a +4 bonus to Severity Checks against that opponent for the next three rounds.",
+    "Hacked Digits<br>Target suffers maximum damage, and takes 1 Con and Str damage.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.<br>Heal: Rest or Restoration spell.",
+    "Hacked Hand<br>Target suffers maximum damage, and takes 1d2 Con and Str damage. Target cannot use hand until healed.<br>Save: A DC 20 Constitution negates hand loss and ability drain becomes ability damage.<br>Heal: A DC 10 Heal check allows usage of hand, albeit with a -4 penalty to all rolls. A DC 20 Heal check repairs the hand’s use. Rest or restorative magic is needed to heal ability damage.<br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
+    "Hamstring<br>Target suffers maximum damage, 1d2 Dex damage and is knocked prone.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Recover: Target must spend a move-equivalent action to stand up. This provokes an attack of opportunity.",
+    "Humiliating Cut<br>Target suffers maximum damage and suffers disadvantage to attack anyone else but you from humiliation until the end of the encounter.<br>Save: A DC 20 Resolve negates; deals bonus damage instead.<br>Recover: Target may continue to make Resolve saves each round until successful, ending the humiliating effect.",
+    "Knockback<br>Target suffers maximum damage and is pushed 1d6 squares directly away.<br>Save: A DC 20 Dexterity negates being pushed; deals additional bonus damage instead.",
+    "Lean Into the Blow<br>Target suffers maximum damage plus double bonus damage again but you drop your weapon.<br>Save: A DC 20 Dexterity (by attacker) negates dropping your weapon.<br>Recover: To pick up a dropped weapon, you must move to its location and expend a move-equivalent action. This provokes attacks of opportunity from all threatening opponents.",
+    "Leg Swipe<br>Target suffers maximum damage plus bonus damage again and target is knocked prone.<br>Save: A DC 20 Dexterity negates being knocked prone; deals additional bonus damage instead.<br>Recover: A prone target must expend a move equivalent action to stand up. This provokes attacks of opportunity from all threatening opponents.",
+    "Lip Cut<br>Target suffers maximum damage and 1d2 bleed. Target also suffers a 10% spell failure chance (-2 to spell casting checks) for verbal spells until healed.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.<br>Heal: A DC 15 Heal check removes the bleed effect; a DC 20 Heal check repairs the cut lip and removes the spell failure chance.",
+    "Long Bloody Gash<br>Target suffers maximum damage and 1d4+1 bleed.<br>Save: DC 20 Constitution halves bleed effect.<br>Heal: A successful Heal check DC 10 reduces the bleeding by half; a DC 20 Heal check removes the bleed effect.",
+    "Momentum<br>You deal maximum damage and gain a +2 circumstance bonus on all your attack rolls until the end of your next turn.",
+    "Muscle Wound<br>Target suffers maximum damage and 1d2 Str damage.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restoration spell.",
+    "Neck Cut<br>Target suffers maximum damage and 1d4 bleed.<br>Save: A DC 20 Constitution negates bleed. <br>Heal: A DC 10 Heal check halves bleed effect; a DC 20 Heal check removes bleed effect.",
+    "Nerve Slice<br>Target suffers maximum damage, 1d2 Dex damage, and becomes staggered for 1 round.<br>Save: A DC 20 Constitution negates Dex damage; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes staggered condition.",
+    "Overhand Chop<br>Target suffers maximum damage plus bonus damage again and 1d2 bleed.<br>Save: A DC 20 Constitution negates bleed; deals additional bonus damage instead.<br>Heal: A DC 20 Heal check ends the bleed effect.",
+    "Pain and Simple<br>Target suffers maximum damage plus bonus damage again and 1d6 nonlethal damage.<br>Save: A DC 20 Constitution halves the additional nonlethal damage.<br>Heal: Nonlethal damage can be cured by rest or curative magic.",
+    "Paper Cut<br>Target suffers maximum damage and suffers a -2 penalty on attack rolls, skill checks and ability checks for 1d4 rounds.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the penalties.",
+    "Parrying Strike<br>You deal maximum damage and gain a +2 dodge bonus to Defense rolls and a +2 Circumstance bonus to Parry attempts against that opponent until the end of your next turn.",
+    "Rupture Abdominal Cavity<br>Target suffers maximum damage and 1 Con bleed.<br>Save: A DC 20 Constitution negates the bleed effect; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the Con bleed.",
+    "Sapping Slash<br>Target suffers maximum damage and is fatigued.<br>Save: A DC 20 Constitution save negates; deals additional bonus damage instead.<br>Heal: Rest",
+    "Severed Tendon<br>Target suffers maximum damage and 1d2 Dex damage.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restoration spell.",
+    "Spun Around<br>Target suffers maximum damage and is flat-footed for 1 round.<br>Save: A DC 20 Dexterity negates; deals additional bonus damage instead.<br>Recover: A DC 20 Acrobatics check ends the flatfooted condition.",
+    "Stand Aside<br>Target suffers maximum damage plus bonus damage again and is pushed 1 square in any direction.<br>Save: A DC 20 Strength negates push; deals bonus damage instead.",
+    "Surprise Opening<br>Target suffers maximum damage and you may make one additional free attack against the target at a -4 penalty.",
+    "Swing Through<br>Target suffers maximum damage and you may make one additional free attack against another adjacent opponent you threaten at a -4 penalty.<br>Special: If no adjacent opponents, deal additional bonus damage instead.",
+    "Tangled<br>Target suffers maximum damage and you may attempt a free grapple attack against the target with a +2 circumstance bonus. The free grapple does not cause attacks of opportunity.",
+    "Terrible Gash<br>Target suffers maximum damage and 1 Con and Cha damage.<br>Save: A DC 20 Dexterity negates ability damage; deals bonus damage instead.<br>Heal: Rest or restoration spell.",
+    "Throat Slash<br>Target suffers maximum damage plus 1d4 bleed. Target cannot talk or breathe and is considered drowning while bleeding.<br>Save: A DC 20 Constitution halves bleed.<br>Heal: A DC 10 Heal check halves bleed, while a DC 20 Heal check ends bleed effect.",
+    "Ugly Wound<br>Target suffers maximum damage and 1d3 Cha damage.<br>Save: A DC 20 Constitution negates ability damage; deals bonus damage instead.<br>Heal: Rest or restoration spell.",
+    "We’ve Got A Bleeder!<br>Target suffers maximum damage and 1d6 bleed.<br>Save: A DC 20 Constitution halves bleed effect each round.<br>Heal: A DC 10 Heal check halves the bleed effect, while a DC 20 Heal check ends it.",
+    "Weapon Strike<br>Target suffers maximum damage and attack also deals damage to target’s weapon (hardness applies). If the target is wielding multiple weapons, the attacker may choose which weapon suffers damage.<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wield a weapon, deal additional bonus damage again to target instead.",
+    "Wide Open<br>Target suffers maximum damage and provokes attacks of opportunity from all threatening opponents.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Special: If no opponents threaten, deal additional bonus damage instead."    
     ];
-
+    
     const randomNumber = getRandomInt(50);
     const title = b_slashing[randomNumber];
     $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
-
+    
     // for (let i = 0; i < 50; i++) {
-    //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
+    //   let title = b_slashing[i];
+    //   $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
     // }
 
     $("#text").show();
-    event.preventDefault();
+    // event.preventDefault();
   });
 
   $("button#btnB_Piercing").click(function() {
@@ -811,7 +811,7 @@ $(document).ready(function() {
 
   $("button#btnS_Slashing").click(function() {
     // SEVERE/SLASHING Table
-    const s_slashing = ["Across the Eyes",
+    const s_slashing = ["Across the Eyes<br>",
     "Armor Damage",
     "Bad Parry",
     "Severed Ear",
