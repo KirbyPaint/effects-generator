@@ -476,66 +476,66 @@ $(document).ready(function() {
 
   $("button#btnB_Magic").click(function() {
     // MINOR/MAGIC Table
-    const b_magic = ["MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
-    "MINOR/MAGIC TEXT",
+    const b_magic = ["Allergic Reaction<br>Maximize all spell variables and target opponent within the spells range suffers 1d2 damage to a random ability score.<br>Save: A DC 20 Constitution negates ability damage. If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha",
+    "Arcane Blast<br>Maximize all spell variables and target opponent within the spells range suffers bonus damage again. This is a force effect.<br>Save: A DC 20 Dexterity save negates the arcane blast. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Arcane Glow<br>Maximize all spell variables and target opponent within the spells range glows as the spell faerie fire for 1d4 rounds. <br>Save: A DC 20 Resolve save negates the faerie fire. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Arcane Goo<br>Maximize all spell variables and one target square within the spells range is covered in arcane goo. Any creature in that square or who enters that square becomes entangled as the web spell.<br>Save: A DC 20 Dexterity check negates the entangled. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Recovery: A DC 20 Strength or Dexterity check allows you to escape the arcane goo entanglement. An opponent may make an attempt to escape at the beginning of their turn each round.",
+    "Aura of Protection<br>Maximize all spell variables and you gain a +4 Deflection bonus to Defense rolls as the spell Mage Armor for 1d2 rounds. All allies within 10 feet gain 1/2 this bonus to their defense rolls as well. This is a force effect.<br>Save: If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Call of the Wild<br>Maximize all spell variables and summon animals to your aid as the spell Summon Natures Ally for 1d4 Rounds.<br>Save: If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: The animal summoned from the Summon Natures Ally table may not be of a greater spell level of than you can cast.",
+    "Combustion<br>Maximize all spell variables and if spell deals damage, each opponent who suffers damage catches fire suffering bonus damage again at the start of their turn for 1d4 rounds.<br>Save: A DC 20 Resolve save negates catching fire. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: If the spell would deal damage, its damage type becomes fire.",
+    "Concussive Spell<br>Maximize all spell variables and target opponent within the spells range is Staggered for 1 Round. <br>Save: DC 20 Constitution negates Staggered. If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Conduit<br>Maximize all spell variables and target opponent within the spells range suffers disadvantage  on all saves made against your spells for 1d2 rounds. <br>Save: A DC 20 Resolve save negates the disadvantage. If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: The type of magic determines what type of skill check is needed to heal this effect. Arcana for Arcane, Religion for Divine, and Nature for Primal magic.<br>Heal: A DC 20 Skill check removes the disadvantage.",
+    "Corrosive<br>Maximize all spell variables and if spell deals damage, each opponent who suffers damage also suffers damage to their armor as though it were acid damage.<br>Save: DC 20 Dexterity negates armor damage. If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: If the spell would deal damage, its damage type becomes acid. If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
+    "Cut Off From Magic<br>Maximize all spell variables and a target opponent within the spells range cannot cast spells or use spell like abilities for 1d2 rounds.<br>Save: If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: The type of magic determines what type of skill check is needed to heal this effect. Arcana for Arcane, Religion for Divine, and Nature for Primal magic.<br>Heal: A DC 20 Skill check removes the cut off from magic effect.",
+    "Distraction<br>Maximize all spell variables and an illusion of the caster appears adjacent to the caster or spell target. The illusion lasts for 1d4 rounds and can move up to 30 feet on your turn. When the illusion is within melee reach of an opponent it acts as a flanking partner for all allies. <br>Save: If the spell targeted an opponent. DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: If an opponent makes an attack against the illusion it is an automatic miss but the attacker may make an immediate Intelligence save DC 20 to realize it is an illusion; if successful this also negates the flanking effect of the illusion.",
+    "Dispelling<br>Maximize all spell variables and you may dispel as per the spell dispel magic on a target opponent or ally within the spells range.<br>Save: DC 20 Resolve negates Dispel. If the spell targeted an opponent. DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Draining Spell<br>Maximize all spell variables and a target opponent within the spells range randomly loses one of their spells known or one spell like abilities for 1 round.<br>Save: A DC 20 Resolve save negates the spell loss. If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: The type of magic determines what type of skill check is needed to heal this effect. Arcana for Arcane, Religion for Divine, and Nature for Primal magic.<br>Heal: A DC 20 Skill check Restores the lost spell or spell like ability.",
+    "Electrocuted<br>Maximize all spell variables and if spell deals damage, each opponent who suffers damage is also staggered for 1 round.<br>Save: DC 20 Constitution negates staggered. If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: If the spell would deal damage, its damage type becomes electricity.",
+    "Elemental Call<br>Maximize all spell variables and a Medium elemental appears to server you for 1d4 rounds.<br>Save: If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: If the spell would deal an elemental type damage, the elemental that appears is of the same type.",
+    "Excruciating<br>Maximize all spell variables and if spell deals damage, each opponent who suffers damage is sickened for 1d4 rounds.<br>Save: DC 20 Constitution negates Sickened. If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Eyeburn<br>Maximize all spell variables and a target opponent within the spells range is blinded for 1d4 rounds. <br>Save: DC 20 Constitution negates Blinded. If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Frost Bite<br>Maximize all spell variables and if spell deals damage, each opponent who suffers damage also suffers 1d4 Dex damage.<br>Save: A DC 20 Resolve save negates the ability damage. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: If the spell would deal damage, its damage type becomes cold.<br>Heal: Rest or restorative magic is needed to heal ability damage.",
+    "Funny Bone<br>Maximize all spell variables and a target opponent within the spells range must spend their next turn laughing as the hideous laughter spell.<br>Save: A DC 20 Resolve save negates the laughter. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Hypnotic Link<br>Maximize all spell variables and you may give a target opponent within the spells range 1 suggestion as the spell suggestion. <br>Save: A DC 20 Resolve save negates the suggestion. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "I Love You, Man<br>Maximize all spell variables and a target opponent within the spells range is charmed for 1d2 hours as the spell Charm Person. <br>Save: If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: A DC 20 Resolve save negates the Charm Person; opponent may make a new save each round they are affected.",
+    "Intense Flare<br>Maximize all spell variables and if spell deals damage, ignore any energy and magic damage resistance (but not immunity) each opponent  has and suppress those resistances for 1d4 rounds.<br>Save: DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: The type of magic determines what type of skill check is needed to heal this effect. Arcana for Arcane, Religion for Divine, and Nature for Primal magic.<br>Heal: A DC 20 Skill check removes the flare effect returning their resistances to normal.",
+    "Knockback<br>Maximize all spell variables and if spell deals damage, each opponent who suffers damage is pushed 1d6 squares directly away from you.<br>Save: A DC 20 Strength save negates the knock back. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Life Leach<br>Maximize all spell variables and a target opponent within the spells range is marked for death. If the marked opponent dies within 1d4 rounds, you draw forth an amount of life force as the spell Death Knell. <br>Save: If the spell targeted an opponent. DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: The type of magic determines what type of skill check is needed to heal this effect. Arcana for Arcane, Religion for Divine, and Nature for Primal magic.<br>Heal: A DC 20 Skill check removes the mark.",
+    "Light Blast<br>Maximize all spell variables and a target opponent within the spells range is blinded for 1d4 minutes.<br>Save: A DC 20 Dexterity save negates the blind. If the spell targeted an opponent. DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: A Heal check DC 10 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%). A DC 20 heal check will fully repair eyesight to normal levels.",
+    "Lingering Magic<br>Maximize all spell variables and if spell has duration greater than instantaneous, each opponent or ally effected by the spell has its duration increased by 1d4 rounds.<br>Save: A DC 20 Resolve save negates the increased duration. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Maximum Effect<br>Maximize all spell variables and if the spell scales with caster level, increases the effective and maximum caster level by 2. <br>Save: If the spell targeted an opponent. DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Mind Cloud<br>Maximize all spell variables and a target opponent within the spells range is dazed for 1 round.<br>Save: A DC 20 Resolve save negates the daze. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead",
+    "Nerve Damage<br>Maximize all spell variables and a target opponent within the spells range is slowed as the spell Slow for 1d4 rounds.<br>Save: A DC 20 Resolve save negates the slow. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead",
+    "Olfactory Overload<br>Maximize all spell variables and a target opponent within the spells range is nauseated for 1 Round and cannot use the scent or blindsense abilites for 1 day.<br>Save: DC 20 Constitution save negates nauseated. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: A DC 20 Heal check removes the restores scent and blindsense abilites .",
+    "Petrified<br>Maximize all spell variables and a target opponent within the spells range is petrified for 1d2 hours. <br>Save: DC 20 Resolve save negates petrified. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: The type of magic determines what type of skill check is needed to heal this effect. Arcana for Arcane, Religion for Divine, and Nature for Primal magic.<br>Heal: A DC 20 Skill check removes the petrification.",
+    "Phased<br>Maximize all spell variables and a target opponent or ally within the spells range becomes incorporeal for 1d3 rounds. <br>Save: DC 20 Resolve save negates Incorporeal. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Planar Rift<br>Maximize all spell variables and a target opponent within the spells range is banished to a random plane of existence for 1d2 rounds. When the banishment ends the opponent reappears 1d6 squares away from their previous location in a random direction.<br>Save: DC 20 Resolve save negates Banishment. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br><br>D10 - Planes<br>1 - Light<br>2 - Positive Energy<br>3 - Astral Plane<br>4 - Water<br>5 - Earth<br>6 - Fire<br>7 - Air<br>8 - Ethereal<br>9 - Negative Energy<br>10 - Shadow",
+    "Power Surge<br>Maximize all spell variables and you may cast another spell as a Free Action at a -4 penalty. <br>Save: If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Pretty Colors<br>Maximize all spell variables and a target opponent within the spells range is dazzled for 1d4 rounds.<br>Save: DC 20 Resolve save negates dazzled. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Returning Spell<br>Maximize all spell variables and the casting Cooldown of the spell is reduced by 1 round (to a minimum of 0).",
+    "Roaring Spell<br>Maximize all spell variables and a target opponent within the spells range is deafened for 1d4 rounds.<br>Save: DC 20 Constitution save negates deafened. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Shrink Ray<br>Maximize all spell variables and a target opponent within the spells range is reduced for 1d4 rounds as reduce person.<br>Save: DC 20 Resolve save negates reduce person. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Siren Song<br>Maximize all spell variables and a target opponent within the spells range is mesmerized for 1d6 Rounds.<br>Save: DC 20 Resolve save negates mesmerized. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Splash Spell<br>Maximize all spell variables and if spell deals damage to an opponent, deal half the total damage to all adjacent opponents as well.<br>Save: A DC 20 Dexterity save for adjacent opponents negates the splash damage. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Stunned<br>Maximize all spell variables and a target opponent within the spells range is stunned for 1 round.<br>Save: DC 20 Resolve save negates Stunned. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Surge<br>Maximize all spell variables and a target ally within the spells range is accelerated as the spell Haste for 1d4 rounds.<br>Save:. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead",
+    "Terrifying Display<br>Maximize all spell variables and a target ally within the spells range is shaken for 1d4 rounds.<br>Save: DC 20 Resolve save negates shaken. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Transposition<br>Maximize all spell variables and you may target an opponent or ally within the spells range and switch places with them.<br>Save: DC 20 Resolve save negates transposition. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Turned Around<br>Maximize all spell variables and a target opponent within the spells range is staggered for 1d2 rounds.<br>Save: DC 20 Resolve save negates staggered. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Vampiric Magic<br>Maximize all spell variables and if spell deals damage, you gain a number of temporary hit points equal to the total amount of damage dealt for 1d6 rounds.<br>Save: DC 20 Resolve save halves the temporary health granted to you. If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Vanish<br>Maximize all spell variables and you become invisible for 1d4 rounds as the spell invisibility.<br>Save: If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
+    "Vulnerability<br>Maximize all spell variables and if spell deals damage, each opponent who suffers damage becomes vulnerable (suffers 50% additional damage) to that damage type for 1d4 rounds.<br>Save: DC 20 Resolve save negates vulnerability; but if the spell would deal damage, deal additional bonus damage instead.<br>Special: The type of magic determines what type of skill check is needed to heal this effect. Arcana for Arcane, Religion for Divine, and Nature for Primal magic.<br>Heal: A DC 20 Skill check removes the vulnerability returning their resistances to normal.",
+    "Wild Surge<br>Maximize all spell variables and you gain a +2 critical range and critical fumble range for all spells you cast until the end of your next turn.(Critical Threat 18-20, Critical Fumble 1-3<br>Save: If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead."    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = b_magic[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = b_magic[randomNumber];
+    // $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = b_magic[i];
+      $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
     event.preventDefault();
