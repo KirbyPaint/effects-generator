@@ -3,11 +3,13 @@
 }
 
 #text p {
-  border: 2px solid black;
+  border: 10px solid black;
   padding: 5px;
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 30px;
+  border-style: groove;
+  border-color: goldenrod;                                        /* Optional border */
 }
 
 * {
@@ -18,6 +20,10 @@ html, body {
   width: 100%;
   height: 100%;
 }
+
+/* body {                                                           Toggle this for gradient bg, it looks bad though
+  background-image: linear-gradient(red, yellow);
+} */
 
 li {
   list-style: none;
