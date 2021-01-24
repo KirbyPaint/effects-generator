@@ -1,19 +1,33 @@
-# _TEMPLATE_
+# _D&D Critical Effects Generator_
 
-#### _Website to <PURPOSE>_
+#### _Website to generate critical effects from a list_
 
 #### By _**Ash Porter (KirbyPaint)**_
-### Co-authored by _**<AUTHOR>**_
+### Generated list effects provided by _Forest Jennings_
 
 ## Description
 
-_The purpose of this website is to <DETAILED PURPOSE>_
+_The purpose of this website is to generate critical success and fumble effects for our D&D games. It is a personal project that my roommate has asked me to work on in my off time._
+_This project will run in a web browser. Not formatted for mobile devices._
 
 ## Setup/Installation Requirements
 
-* _Please use either a currently updated Firefox or Chrome web browser._
+* _Please use either a currently updated Firefox or Chrome web browser to run the page. These are the only browsers I've tested the page in._
+
+## How To Use
+
+_When a player rolls a critical hit, and confirms the hit, the Dungeon Master simply needs to click on the button denoting whether the hit was a Minor, Major, or Severe hit. Our system has 20-29 as a Minor hit, 30-39 as a Major hit, and 40+ constitutes a Severe hit. Then, choose the damage type (slashing, piercing, bludgeoning, or magical)._
+_If the player rolls a fumble, the DM chooses which type of damage they fumbled on, and clicks the button._
 
 ## Known Bugs
+
+_None known. Site is unfinished, bugs might appear that are actually unimplemented features._
+
+## Planned Implementations
+
+* _Add all effects to all buttons (provided by Forest when he has time)_
+* _Pop-up window displaying the currently rolled effect (change requested by Forest)_
+* _Cleaner design of Fumble art and overall chart art (change requested by KirbyPaint)_
 
 ## Support and contact details
 
@@ -21,10 +35,10 @@ _Discord: @KirbyPaint#0751_
 
 ## Technologies Used
 
-_HTML, CSS (Bootstrap), Moria Citadel font by Russ Herschler_
+_HTML, CSS (Bootstrap), JavaScript (jQuery)_
 
 ### License Information
 
 _GNU Public License_\
 
-Copyright (c) 2020 **_KirbyPaint_**
+Copyright (c) 2021 **_KirbyPaint_**

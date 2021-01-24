@@ -468,7 +468,7 @@ $(document).ready(function() {
     //   $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
     // }
 
-    alert(title);
+    //alert(title);
 
     $("#text").show();
     event.preventDefault();
