@@ -7,7 +7,7 @@
   padding: 5px;
   margin-left: 80px;
   margin-right: 80px;
-  margin-top: 30px;;
+  margin-top: 30px;
 }
 
 * {
@@ -73,6 +73,7 @@ img:hover {
 
 .table-header {
   text-align: center;
+  font-family: 'moriaregular';
   color: white;
   background-color: black;
   border: 5px solid white;
