@@ -91,6 +91,7 @@ img:hover {
 .table-header {
   text-align: center;
   font-family: 'moriaregular';
+  font-weight: bold;
   color: white;
   background-color: black;
   border: 5px solid white;
