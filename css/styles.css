@@ -86,18 +86,28 @@ img:hover {
   padding-top: 15px;
 }
 
-.column-border-left {
+.column-border-fumble {
+  padding: 15px 15px 15px 30px;
+}
+
+.column-border-minor {
   border-style: solid;
   border-color: black;
   border-width: 0px 5px 0px 10px;
   padding-top: 15px;
 }
 
-.column-border-right {
+.column-border-major {
   border-style: solid;
   border-color: black;
   border-width: 0px 10px 0px 5px;
   padding-top: 15px;
+}
+
+.column-border-severe {
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-left: 15px;
 }
 
 .stealth-border {
