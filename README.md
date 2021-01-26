@@ -38,6 +38,6 @@ _HTML, CSS (Bootstrap), JavaScript (jQuery)_
 
 ### License Information
 
-_GNU Public License_\
+_GNU Public License_
 
 Copyright (c) 2021 **_KirbyPaint_**
