@@ -3,13 +3,10 @@
 }
 
 #text p {
-  border: 10px solid black;
-  padding: 5px;
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 30px;
-  border-style: groove;
-  border-color: goldenrod;                                        /* Optional border */
+  padding: 20px;
+  margin: 50px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color R, G, B, opacity */
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -21,60 +18,74 @@ html, body {
   height: 100%;
 }
 
-/* body {                                                           Toggle this for gradient bg, it looks bad though
-  background-image: linear-gradient(red, yellow);
-} */
-
 li {
   list-style: none;
   text-align: center;
 }
 
-img {
-  cursor: pointer;
-  width: 100px;
-}
-
 img:hover {
-  /* opacity: 0.6; */
   border: 10px solid black;
   border-radius: 256px;
 }
 
 .gray {
   background-color: rgb(136, 136, 136);
+  border-style: ridge groove groove ridge;
+  border-color: gray;
+  border-width: 10px;
+  border-radius: 25px;
 }
 
 .green {
   background-color: lightgreen;
+  border-style: ridge groove groove ridge;
+  border-color: green;
+  border-width: 10px;
+  border-radius: 25px;
 }
 
 .yellow {
   background-color: rgb(236, 238, 144);
+  border-style: ridge groove groove ridge;
+  border-color: goldenrod;
+  border-width: 10px;
+  border-radius: 25px;
 }
 
 .red {
   background-color: rgb(238, 144, 144);
+  border-style: ridge groove groove ridge;
+  border-color: red;
+  border-width: 10px;
+  border-radius: 25px;
 }
 
 .backing-image {
   background-image: url("../img/bg.jpg");
+  border: 10px solid black;
+  border-radius: 25px;
 }
 
 .fumble-image {
   background-image: url("../img/critfumble.jpg");
+  border: 3px solid black;
+  border-radius: 25px;
 }
 
-.column-border {
-  border: 6px solid black;
-  border-radius: 25px;
-  padding-bottom: 15px;
+.button-image {
+  cursor: pointer;
+  width: 100px;
 }
 
 .row-border {
-  border: 3px solid black;
   border-radius: 25px;
   padding-top: 15px;
+}
+
+.stealth-border {
+  /* offset-x | offset-y | blur-radius | spread-radius | color R, G, B, opacity */
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
 }
 
 .table-header {
