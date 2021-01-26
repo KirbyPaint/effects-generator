@@ -25,7 +25,9 @@ li {
 
 img:hover {
   border: 10px solid black;
+  border-style: ridge groove groove ridge;
   border-radius: 256px;
+  box-shadow: 10px 20px 10px 10px rgba(56, 30, 0, 0.486);
 }
 
 .gray {
