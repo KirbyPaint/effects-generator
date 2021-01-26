@@ -97,6 +97,17 @@ img:hover {
   border-radius: 25px;
 }
 
+.button-header {
+  text-align: center;
+  font-family: 'moriaregular';
+  color: white;
+  text-shadow: 2px 2px 8px #FF0000,
+  1px 0px 1px black,
+  0px 1px 1px black,
+  -1px 0px 1px black,
+  0px -1px 1px black;
+}
+
 .center {
   text-align: center;
 }
