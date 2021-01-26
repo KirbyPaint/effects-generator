@@ -78,22 +78,25 @@ img:hover {
 }
 
 .row-border {
-  /* border-style: solid; */
   border-radius: 25px;
   padding-top: 15px;
 }
 
 .column-border {
-  /* border-style: solid; */
-  /* border-radius: 25px; */
   padding-top: 15px;
 }
 
-.column-border-extra {
+.column-border-left {
   border-style: solid;
   border-color: black;
-  border-width: 0px 5px 0px 5px;
-  /* border-radius: 25px; */
+  border-width: 0px 5px 0px 10px;
+  padding-top: 15px;
+}
+
+.column-border-right {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 10px 0px 5px;
   padding-top: 15px;
 }
 
@@ -109,7 +112,7 @@ img:hover {
   font-weight: bold;
   color: white;
   background-color: black;
-  border: 5px solid white;
+  border: 5px solid  white;
   border-radius: 25px;
 }
 
