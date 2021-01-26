@@ -27,7 +27,6 @@ _None known. Site is unfinished, bugs might appear that are actually unimplement
 
 * _Add all effects to all buttons (provided by Forest when he has time)_
 * _Pop-up window displaying the currently rolled effect (change requested by Forest)_
-* _Cleaner design of Fumble art and overall chart art (change requested by KirbyPaint)_
 
 ## Support and contact details
 
