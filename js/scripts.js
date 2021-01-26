@@ -67,7 +67,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnG_Ranged").click(function() {
@@ -134,7 +133,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnG_Natural").click(function() {
@@ -201,7 +199,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnG_Magic").click(function() {
@@ -268,7 +265,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnB_Slashing").click(function() {
@@ -335,7 +331,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    // event.preventDefault();
   });
 
   $("button#btnB_Piercing").click(function() {
@@ -402,7 +397,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnB_Bludgeoning").click(function() {
@@ -471,7 +465,6 @@ $(document).ready(function() {
     //alert(title);
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnB_Magic").click(function() {
@@ -538,7 +531,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnM_Slashing").click(function() {
@@ -605,7 +597,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnM_Piercing").click(function() {
@@ -672,7 +663,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnM_Bludgeoning").click(function() {
@@ -739,7 +729,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnM_Magic").click(function() {
@@ -806,7 +795,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnS_Slashing").click(function() {
@@ -873,7 +861,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnS_Piercing").click(function() {
@@ -940,7 +927,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnS_Bludgeoning").click(function() {
@@ -1007,7 +993,6 @@ $(document).ready(function() {
     // }
 
     $("#text").show();
-    event.preventDefault();
   });
 
   $("button#btnS_Magic").click(function() {
