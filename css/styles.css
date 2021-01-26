@@ -78,7 +78,22 @@ img:hover {
 }
 
 .row-border {
+  /* border-style: solid; */
   border-radius: 25px;
+  padding-top: 15px;
+}
+
+.column-border {
+  /* border-style: solid; */
+  /* border-radius: 25px; */
+  padding-top: 15px;
+}
+
+.column-border-extra {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 5px 0px 5px;
+  /* border-radius: 25px; */
   padding-top: 15px;
 }
 
