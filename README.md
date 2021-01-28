@@ -21,7 +21,7 @@ _If the player rolls a fumble, the DM chooses which type of damage they fumbled 
 
 ## Known Bugs
 
-_None known. Site is unfinished, bugs might appear that are actually unimplemented features._
+_Button shadows render improperly on mobile._
 
 ## Planned Implementations
 
