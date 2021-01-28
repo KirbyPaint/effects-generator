@@ -57,14 +57,14 @@ $(document).ready(function() {
     "How In The World?<br>The attack hits and deals damage to the original target and the opponent may not negate the attack (such as a counter, block, or parry). This attack may not critically hit or cause any special effects (such as from a Strike maneuver)"    
     ];
     
-    const randomNumber = getRandomInt(50);
-    const title = g_melee[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = g_melee[randomNumber];
+    // $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = g_melee[i];
-    //   $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = g_melee[i];
+      $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -123,14 +123,14 @@ $(document).ready(function() {
     "How In The World?<br>The attack hits and deals damage to the original target and the opponent may not negate the attack (such as a counter, block, or parry). This attack may not critically hit or cause any special effects (such as from a Strike maneuver)"    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = g_ranged[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = g_ranged[randomNumber];
+    // $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = g_ranged[i];
-    //   $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = g_ranged[i];
+      $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -189,14 +189,14 @@ $(document).ready(function() {
     "How In The World?<br>The attack hits and deals damage to the original target and the opponent may not negate the attack (such as a counter, block, or parry). This attack may not critically hit or cause any special effects (such as from a Strike maneuver)"    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = g_natural[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = g_natural[randomNumber];
+    // $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = g_natural[i];
-    //   $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = g_natural[i];
+      $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -255,21 +255,21 @@ $(document).ready(function() {
     "Wild Magic<br>Reroll your spell cast roll but you gain a +9 critical range and critical fumble range for the spell cast. (Critical Threat 11-20, Critical Fumble 1-10)"    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = g_magic[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = g_magic[randomNumber];
+    // $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = g_magic[i];
-    //   $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = g_magic[i];
+      $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
 
   $("button#btnB_Slashing").click(function() {
     // MINOR/SLASHING Table
-    const b_slashing = ["Across the Eyes<br>Target suffers maximum damage and is blinded for 1d4 minutes.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 10 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%). A DC 20 heal check will fully repair eyesight to normal levels.",
+    const b_slashing = ["Across the Eyes<br>Target suffers maximum damage and is blinded for 1d4 minutes.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 10 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%).<br>A DC 20 heal check will fully repair eyesight to normal levels.",
     "Armor Damage<br>Target suffers maximum damage and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
     "Bad Parry<br>Target suffers maximum damage and is disarmed (1 item).<br>Save: A DC 20 Dexterity negates the disarm; deals bonus damage instead.<br>Recover: Target must expend a move-equivalent action to retrieve its item. This provokes attacks of opportunity from all threatening opponents. <br>Special: If target is not holding any items, deal additional bonus damage instead.",
     "Badly Hacked Ear<br>Target suffers maximum damage and 1 Cha damage. Target also suffers a -2 penalty on Perception checks until healed.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.<br>Heal: A DC 10 Heal check halves the Perception check penalties, while a DC 20 removes them. Rest or restorative magic is required to heal ability damage.",
@@ -282,14 +282,14 @@ $(document).ready(function() {
     "Cut Straps<br>Target suffers maximum damage, its movement is reduced by 10’, and the target’s armor check penalty is doubled until repaired.<br>Save: A DC 20 Dexterity avoids movement effect and armor check penalties; deals bonus damage instead.<br>Repair: A Craft (Armor) DC 20 repairs armor and removes penalties.",
     "Delayed Wound<br>Target suffers maximum damage as bleed damage.<br>Save: A DC 20 Constitution halves the bleed effect.<br>Heal: A DC 10 Heal check halves bleed effect; a DC 20 Heal check removes bleed effect.",
     "Disembowel<br>Target suffers maximum damage plus bonus damage again, 1d2 Con damage, and 1d4 bleed.<br>Save: A DC 20 Constitution halves the Con damage and bleed (minimum 1).<br>Heal: A DC 10 Heal check halves the bleed effect; a DC 20 Heal check negates the bleed effect. Rest or restorative magic is needed to heal ability damage.",
-    "Fingertipped<br>Target suffers maximum damage and 1d2 Dex damage. Target cannot use hand until healed.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Heal: A DC 10 Heal check allows usage of hand, albeit with a -4 penalty to all rolls. A DC 20 Heal check repairs the hand’s use. Rest or restorative magic is needed to heal ability damage.<br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
+    "Fingertipped<br>Target suffers maximum damage and 1d2 Dex damage. Target cannot use hand until healed.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Heal: A DC 10 Heal check allows usage of hand, albeit with a -4 penalty to all rolls. A DC 20 Heal check repairs the hand’s use. Rest or restorative magic is needed to heal ability damage.<br><br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
     "Flat Blade Thwack<br>Target suffers maximum damage plus double bonus damage again and is staggered for 1 round, but all damage is non-lethal.<br>Save: A DC 20 Constitution save negates stunned condition and halves additional bonus damage.<br>Heal: Rest or curative magic.",
     "Flay<br>Target suffers maximum damage plus 1d3 Str damage.<br>Save: A DC 20 Constitution negates Str damage; deals bonus damage instead.<br>Heal: Rest or restorative magic.",
     "Gory Wound<br>Target suffers maximum damage and is sickened for 1d4 rounds.<br>Save: A DC 20 Constitution save negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the sickened condition.",
     "Gut Slash<br>Target suffers maximum plus bonus damage again and 1d4 bleed. Target cannot swallow whole until healed.<br>Save: A DC 20 Constitution halves the bleed effect (minimum 1).<br>Heal: A DC 10 Heal check halves the bleed effect; a DC 20 Heal check ends it.",
     "Hack and Slash<br>Target suffers maximum damage and you gain a +4 bonus to Severity Checks against that opponent for the next three rounds.",
     "Hacked Digits<br>Target suffers maximum damage, and takes 1 Con and Str damage.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.<br>Heal: Rest or Restoration spell.",
-    "Hacked Hand<br>Target suffers maximum damage, and takes 1d2 Con and Str damage. Target cannot use hand until healed.<br>Save: A DC 20 Constitution negates hand loss and ability drain becomes ability damage.<br>Heal: A DC 10 Heal check allows usage of hand, albeit with a -4 penalty to all rolls. A DC 20 Heal check repairs the hand’s use. Rest or restorative magic is needed to heal ability damage.<br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
+    "Hacked Hand<br>Target suffers maximum damage, and takes 1d2 Con and Str damage. Target cannot use hand until healed.<br>Save: A DC 20 Constitution negates hand loss and ability drain becomes ability damage.<br>Heal: A DC 10 Heal check allows usage of hand, albeit with a -4 penalty to all rolls. A DC 20 Heal check repairs the hand’s use. Rest or restorative magic is needed to heal ability damage.<br><br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
     "Hamstring<br>Target suffers maximum damage, 1d2 Dex damage and is knocked prone.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Recover: Target must spend a move-equivalent action to stand up. This provokes an attack of opportunity.",
     "Humiliating Cut<br>Target suffers maximum damage and suffers disadvantage to attack anyone else but you from humiliation until the end of the encounter.<br>Save: A DC 20 Resolve negates; deals bonus damage instead.<br>Recover: Target may continue to make Resolve saves each round until successful, ending the humiliating effect.",
     "Knockback<br>Target suffers maximum damage and is pushed 1d6 squares directly away.<br>Save: A DC 20 Dexterity negates being pushed; deals additional bonus damage instead.",
@@ -321,14 +321,14 @@ $(document).ready(function() {
     "Wide Open<br>Target suffers maximum damage and provokes attacks of opportunity from all threatening opponents.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Special: If no opponents threaten, deal additional bonus damage instead."    
     ];
     
-    const randomNumber = getRandomInt(50);
-    const title = b_slashing[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = b_slashing[randomNumber];
+    // $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
     
-    // for (let i = 0; i < 50; i++) {
-    //   let title = b_slashing[i];
-    //   $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = b_slashing[i];
+      $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -387,14 +387,14 @@ $(document).ready(function() {
     "Vulnerable Spot<br>Target suffers maximum damage and takes 1d2 random ability damage.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha"    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = b_piercing[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = b_piercing[randomNumber];
+    // $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = b_piercing[i];
-    //   $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = b_piercing[i];
+      $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -453,16 +453,14 @@ $(document).ready(function() {
     "Where Am I?<br>Target suffers maximum damage and is dazed for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead."
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = b_bludgeoning[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = b_bludgeoning[randomNumber];
+    // $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
-    // }
-
-    //alert(title);
+    for (let i = 0; i < 50; i++) {
+      let title = b_bludgeoning[i];
+      $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -521,14 +519,14 @@ $(document).ready(function() {
     "Wild Surge<br>Maximize all spell variables and you gain a +2 critical range and critical fumble range for all spells you cast until the end of your next turn.(Critical Threat 18-20, Critical Fumble 1-3<br>Save: If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead."    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = b_magic[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = b_magic[randomNumber];
+    // $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = b_magic[i];
-    //   $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = b_magic[i];
+      $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -548,7 +546,7 @@ $(document).ready(function() {
     "Cut Straps<br>Target suffers maximum damage, its movement is reduced by 10’, and the target’s armor check penalty is doubled until repaired.<br>Save: A DC 25 Dexterity avoids movement effect and armor check penalties; deals bonus damage instead.<br>Repair: A Craft (Armor) DC 25 repairs armor and removes penalties.",
     "Delayed Wound<br>Target suffers maximum damage as bleed damage.<br>Save: A DC 25 Constitution halves the bleed effect.<br>Heal: A DC 15 Heal check halves bleed effect; a DC 25 Heal check removes bleed effect.",
     "Disembowel<br>Target suffers maximum damage plus bonus damage again, 1d3 Con damage, and 1d6 bleed.<br>Save: A DC 25 Constitution halves the Con damage and bleed (minimum 1).<br>Heal: A DC 15 Heal check halves the bleed effect; a DC 25 Heal check negates the bleed effect. Rest or restorative magic is needed to heal ability damage.",
-    "Fingertipped<br>Target suffers maximum damage and 1d2 Dex damage. Target cannot use hand until healed.<br>Save: A DC 25 Dexterity save negates; deals bonus damage instead.<br>Heal: A DC 15 Heal check allows usage of hand, albeit with a -4 penalty to all rolls. A DC 25 Heal check repairs the hand’s use. Rest or restorative magic is needed to heal ability damage.<br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
+    "Fingertipped<br>Target suffers maximum damage and 1d2 Dex damage. Target cannot use hand until healed.<br>Save: A DC 25 Dexterity save negates; deals bonus damage instead.<br>Heal: A DC 15 Heal check allows usage of hand, albeit with a -4 penalty to all rolls. A DC 25 Heal check repairs the hand’s use. Rest or restorative magic is needed to heal ability damage.<br><br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
     "Flat Blade Thwack<br>Target suffers maximum damage plus triple bonus damage again and is staggered for 1 round, but all damage is non-lethal.<br>Save: A DC 25 Constitution save negates stunned condition and halves additional bonus damage.<br>Heal: Rest or curative magic.",
     "Flay<br>Target suffers maximum damage plus 1d6 Str damage.<br>Save: A DC 25 Constitution negates Str damage; deals bonus damage instead.<br>Heal: Rest or restorative magic.",
     "Gory Wound<br>Target suffers maximum damage and is sickened for 1d6 rounds.<br>Save: A DC 25 Constitution save negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check ends the sickened condition.",
@@ -587,14 +585,14 @@ $(document).ready(function() {
     "Wide Open<br>Target suffers maximum damage and provokes attacks of opportunity from all threatening opponents.<br>Save: DC 25 Dexterity negates; deals bonus damage instead.<br>Special: If no opponents threaten, deal additional bonus damage instead."    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = m_slashing[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = m_slashing[randomNumber];
+    // $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = m_slashing[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = m_slashing[i];
+      $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -653,14 +651,14 @@ $(document).ready(function() {
     "Vulnerable Spot<br>Target suffers maximum damage plus bonus damage again and takes 1d3 random ability damage.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha"    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = m_piercing[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = m_piercing[randomNumber];
+    // $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = m_piercing[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = m_piercing[i];
+      $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -719,14 +717,14 @@ $(document).ready(function() {
     "Where Am I?<br>Target suffers maximum damage plus bonus damage again and is stunned for 1 round.<br>Save: DC 25 Constitution negates; deals bonus damage instead.",
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = m_bludgeoning[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = m_bludgeoning[randomNumber];
+    // $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = m_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = m_bludgeoning[i];
+      $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -785,14 +783,14 @@ $(document).ready(function() {
     "Wild Surge<br>Maximize all spell variables and you gain a +5 critical range and critical fumble range for all spells you cast until the end of your next turn. (Critical Threat 15-20, Critical Fumble 1-6<br>Save: If the spell targeted an opponent DC 25 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead."    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = m_magic[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = m_magic[randomNumber];
+    // $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = m_magic[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = m_magic[i];
+      $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -812,14 +810,14 @@ $(document).ready(function() {
     "Cut Straps<br>Target suffers maximum damage plus bonus damage again, its movement is reduced by 10’, and the target’s armor check penalty is doubled until repaired.<br>Save: A DC 30 Dexterity avoids movement effect and armor check penalties; deals bonus damage instead.<br>Repair: A Craft (Armor) DC 30 repairs armor and removes penalties.",
     "Delayed Wound<br>Target suffers maximum damage plus bonus damage again as bleed damage.<br>Save: A DC 30 Constitution halves the bleed effect.<br>Heal: A DC 20 Heal check halves bleed effect; a DC 30 Heal check removes bleed effect.",
     "Disembowel<br>Target suffers maximum damage plus bonus damage again, 1d4 Con damage, and 1d8 bleed.<br>Save: A DC 30 Constitution halves the Con damage and bleed (minimum 1).<br>Heal: A DC 20 Heal check halves the bleed effect; a DC 30 Heal check negates the bleed effect. Rest or restorative magic is needed to heal ability damage.",
-    "Severed Fingers<br>Target suffers maximum damage plus bonus damage again, loses 1d3 fingers, and 1d2 Dex drain. Target cannot use hand until healed.<br>Save: A DC 30 Dexterity save negates; deals bonus damage instead.<br>Heal: Regenerate spell<br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
+    "Severed Fingers<br>Target suffers maximum damage plus bonus damage again, loses 1d3 fingers, and 1d2 Dex drain. Target cannot use hand until healed.<br>Save: A DC 30 Dexterity save negates; deals bonus damage instead.<br>Heal: Regenerate spell<br><br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
     "Flat Blade Thwack<br>Target suffers maximum damage plus triple bonus damage again and is stunned for 1 round, but all damage is non-lethal.<br>Save: A DC 30 Constitution save negates stunned condition and halves additional bonus damage.<br>Heal: Rest or curative magic.",
     "Flay<br>Target suffers maximum damage plus bonus damage again and 1d6 Str damage.<br>Save: A DC 30 Constitution negates Str damage; deals bonus damage instead.<br>Heal: Rest or restorative magic.",
     "Gory Wound<br>Target suffers maximum damage plus bonus damage again and is sickened for 1d6 rounds.<br>Save: A DC 30 Constitution save negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check ends the sickened condition.",
     "Gut Slash<br>Target suffers maximum damage plus bonus damage again and 1d8 bleed. Target cannot swallow whole until healed.<br>Save: A DC 30 Constitution halves the bleed effect (minimum 1).<br>Heal: A DC 20 Heal check halves the bleed effect; a DC 30 Heal check ends it.",
     "Hack and Slash<br>Target suffers maximum damage plus bonus damage again and you gain a +1 crit range and +4 bonus to Severity Checks against that opponent for the next three rounds.",
     "Hacked Digits<br>Target suffers maximum damage plus bonus damage again, and takes 1d3 Con and Str damage.<br>Save: A DC 30 Dexterity negates; deals bonus damage instead.<br>Heal: Rest or Restoration spell.",
-    "Severed Hand<br>Target suffers maximum damage plus bonus damage again, loses hand and takes 1d3 Con and Str drain.<br>Save: A DC 30 Constitution negates hand loss and ability drain becomes ability damage.<br>Heal: Regenerate spell.<br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
+    "Severed Hand<br>Target suffers maximum damage plus bonus damage again, loses hand and takes 1d3 Con and Str drain.<br>Save: A DC 30 Constitution negates hand loss and ability drain becomes ability damage.<br>Heal: Regenerate spell.<br><br>D10 - Injury<br>1-5 Left Hand<br>6-10 Right Hand",
     "Hamstring<br>Target suffers maximum damage plus bonus damage again, 1d4 Dex damage and is knocked prone.<br>Save: A DC 30 Dexterity save negates; deals bonus damage instead.<br>Recover: Target must spend a move-equivalent action to stand up. This provokes an attack of opportunity.",
     "Humiliating Cut<br>Target suffers maximum damage plus bonus damage again, 1d2 Cha damage, and suffers disadvantage to attack anyone else but you from humiliation until the end of the encounter.<br>Save: A DC 30 Resolve negates; deals bonus damage instead.<br>Recover: Target may continue to make Resolve saves each round until successful, ending the humiliating effect.",
     "Knockback<br>Target suffers maximum damage plus bonus damage again and is pushed 1d6 squares directly away, and is knocked prone.<br>Save: A DC 30 Dexterity negates being knocked prone and halves the distance pushed; deals additional bonus damage instead.<br>Recover: A prone target must expend a move equivalent action to stand up. This provokes attacks of opportunity from all threatening opponents.",
@@ -851,14 +849,14 @@ $(document).ready(function() {
     "Wide Open<br>Target suffers maximum damage plus bonus damage again and provokes attacks of opportunity from all threatening opponents.<br>Save: DC 30 Dexterity negates; deals bonus damage instead.<br>Special: If no opponents threaten, deal additional bonus damage instead."    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = s_slashing[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = s_slashing[randomNumber];
+    // $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = s_slashing[i];
-    //   $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = s_slashing[i];
+      $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -917,14 +915,14 @@ $(document).ready(function() {
     "Vulnerable Spot<br>Target suffers maximum damage plus bonus damage again and takes 1d4 random ability damage.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha"    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = s_piercing[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = s_piercing[randomNumber];
+    // $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = s_piercing[i];
-    //   $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = s_piercing[i];
+      $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -969,7 +967,7 @@ $(document).ready(function() {
     "Shattered Hand<br>Target suffers maximum damage and 1 Str damage. All attacks and skill checks using that hand suffer a -2 penalty.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes penalties, but rest or restorative magic is needed to heal ability damage.",
     "Shattered Nose<br>Target suffers maximum damage, 1d2 Cha damage, and 1d2 bleed.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check heals the bleed effect, but rest or restorative magic is needed to heal ability damage.",
     "Shield Smack<br>Target suffers maximum damage and target’s shield is loosened, causing it to no longer grant its shield bonus for that round.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Special: If target is not using a shield, deals additional bonus damage instead.",
-    "Skull Crack<br>Target suffers maximum damage and 1d2 Int damage.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restoration magic.",
+    "Skull Crush<br>Target’s skull is crushed and immediately dies.<br>DC 30 Constitution negates death; deals maximum damage plus 2d4 Int drain instead.<br>Heal: Rest or restoration magic.",
     "Solid Blow<br>You deal maximum and bonus damage again.<br>Save: None",
     "Split Open<br>Target suffers maximum damage and 1d4 bleed.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 15 Heal check halves the bleed effect, while a DC 20 Heal check ends it.",
     "Spun Around<br>Target suffers maximum damage and is flat-footed for 1 round.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.",
@@ -983,14 +981,14 @@ $(document).ready(function() {
     "Where Am I?<br>Target suffers maximum damage and is dazed for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.",
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = s_bludgeoning[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = s_bludgeoning[randomNumber];
+    // $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = s_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = s_bludgeoning[i];
+      $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -1049,14 +1047,14 @@ $(document).ready(function() {
     "Wild Surge<br>Maximize all spell variables and you gain a +9 critical range and critical fumble range for all spells you cast until the end of your next turn. (Critical Threat 11-20, Critical Fumble 1-10<br>Save: If the spell targeted an opponent DC 30 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead."    
     ];
 
-    const randomNumber = getRandomInt(50);
-    const title = s_magic[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
+    // const randomNumber = getRandomInt(50);
+    // const title = s_magic[randomNumber];
+    // $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    // for (let i = 0; i < 50; i++) {
-    //   let title = s_magic[i];
-    //   $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
-    // }
+    for (let i = 0; i < 50; i++) {
+      let title = s_magic[i];
+      $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
+    }
 
     $("#text").show();
   });
@@ -1065,10 +1063,3 @@ $(document).ready(function() {
     event.preventDefault();
   });
 });
-
-// Each button will link to a different array
-// Might straight up make 16 arrays
-
-// One each for each table
-
-// Use break tags to have one array element with 4 lines. This will get long lol
