@@ -26,7 +26,6 @@ _None known. Site is unfinished, bugs might appear that are actually unimplement
 ## Planned Implementations
 
 * _Pop-up window displaying the currently rolled effect (change requested by Forest)_
-* _Time of effect rolled is stamped into effect when rolled (requested by KirbyPaint)_
 
 ## Support and contact details
 
