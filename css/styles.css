@@ -18,6 +18,10 @@ html, body {
   height: 100%;
 }
 
+body {
+  background-color: lightgray;
+}
+
 li {
   list-style: none;
   text-align: center;
@@ -67,6 +71,10 @@ img:active {
   border-color: red;
   border-width: 10px;
   border-radius: 25px;
+}
+
+.time {
+  float: right;
 }
 
 .backing-image {

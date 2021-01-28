@@ -3,11 +3,18 @@ function getRandomInt(max) {
 }
 
 function getTime() {
-  var time = new Date().getTime();
-  var date = new Date(time);
+  let time = new Date().getTime();
+  let date = new Date(time);
   const dateArray = date.toString();
-  const timeSlice = dateArray.slice(16, 24);
-  return timeSlice;
+  // const timeSlice = dateArray.slice(16, 24);
+  let hourSlice = dateArray.slice(16, 18);
+  const minsecSlice = dateArray.slice(18, 24);
+  if (parseInt(hourSlice.toString()) > 12) {
+    hourSlice -= 12;
+  }
+
+  return hourSlice.toString() + minsecSlice;                  // US Time
+  // return "<span class=\"time\">" + timeSlice + "</span>";  // 24 hr time
 }
 
 $(document).ready(function() {
