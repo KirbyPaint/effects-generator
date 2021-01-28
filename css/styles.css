@@ -27,20 +27,6 @@ li {
   text-align: center;
 }
 
-img {
-  border-radius: 256px;
-  box-shadow: 0px 9px #5a5a5a,
-  10px 30px 10px 10px rgba(0, 0, 0, 0.5);
-  background-color: #808080;
-}
-
-img:active {
-  box-shadow: 0 5px #494949,
-  5px 17px 10px 7px rgba(0, 0, 0, 0.3);
-  transform: translateY(4px);
-  background-color: #494949;
-}
-
 .gray {
   background-color: rgb(136, 136, 136);
   border-style: ridge groove groove ridge;
@@ -92,6 +78,17 @@ img:active {
 .button-image {
   cursor: pointer;
   width: 100px;
+  border-radius: 256px;
+  box-shadow: 0px 9px #5a5a5a,
+  10px 30px 10px 10px rgba(0, 0, 0, 0.5);
+  background-color: #808080;
+}
+
+.button-image:active {
+  box-shadow: 0 5px #494949,
+  5px 17px 10px 7px rgba(0, 0, 0, 0.3);
+  transform: translateY(4px);
+  background-color: #494949;
 }
 
 .row-border {
