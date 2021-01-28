@@ -3,6 +3,7 @@ function getRandomInt(max) {
 }
 
 $(document).ready(function() {
+  // Buttons and their functions
   $("button#btnG_Melee").click(function() {
     // Fumble/Melee Table
     const g_melee = ["All or Nothing<br>Your attack fails and you suffer a -1 penalty on attack rolls until you score a critical hit.<br>Save: Resolve DC 20 negates.<br>Recover: You must succeed at a Resolve save or score a critical hit to end this affect. You may reroll the save each round.<br>Special: Each attack you miss your target increases the penalty by -1.",
@@ -57,14 +58,14 @@ $(document).ready(function() {
     "How In The World?<br>The attack hits and deals damage to the original target and the opponent may not negate the attack (such as a counter, block, or parry). This attack may not critically hit or cause any special effects (such as from a Strike maneuver)"    
     ];
     
-    // const randomNumber = getRandomInt(50);
-    // const title = g_melee[randomNumber];
-    // $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = g_melee[randomNumber];
+    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = g_melee[i];
-      $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = g_melee[i];
+    //   $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -123,14 +124,14 @@ $(document).ready(function() {
     "How In The World?<br>The attack hits and deals damage to the original target and the opponent may not negate the attack (such as a counter, block, or parry). This attack may not critically hit or cause any special effects (such as from a Strike maneuver)"    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = g_ranged[randomNumber];
-    // $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = g_ranged[randomNumber];
+    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = g_ranged[i];
-      $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = g_ranged[i];
+    //   $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -189,14 +190,14 @@ $(document).ready(function() {
     "How In The World?<br>The attack hits and deals damage to the original target and the opponent may not negate the attack (such as a counter, block, or parry). This attack may not critically hit or cause any special effects (such as from a Strike maneuver)"    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = g_natural[randomNumber];
-    // $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = g_natural[randomNumber];
+    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = g_natural[i];
-      $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = g_natural[i];
+    //   $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -255,14 +256,14 @@ $(document).ready(function() {
     "Wild Magic<br>Reroll your spell cast roll but you gain a +9 critical range and critical fumble range for the spell cast. (Critical Threat 11-20, Critical Fumble 1-10)"    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = g_magic[randomNumber];
-    // $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = g_magic[randomNumber];
+    $("#text").prepend("<p class=\"gray\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = g_magic[i];
-      $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = g_magic[i];
+    //   $("#text").prepend("<p class=\"gray\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -321,14 +322,14 @@ $(document).ready(function() {
     "Wide Open<br>Target suffers maximum damage and provokes attacks of opportunity from all threatening opponents.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Special: If no opponents threaten, deal additional bonus damage instead."    
     ];
     
-    // const randomNumber = getRandomInt(50);
-    // const title = b_slashing[randomNumber];
-    // $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = b_slashing[randomNumber];
+    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
     
-    for (let i = 0; i < 50; i++) {
-      let title = b_slashing[i];
-      $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = b_slashing[i];
+    //   $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -387,80 +388,80 @@ $(document).ready(function() {
     "Vulnerable Spot<br>Target suffers maximum damage and takes 1d2 random ability damage.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha"    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = b_piercing[randomNumber];
-    // $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = b_piercing[randomNumber];
+    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = b_piercing[i];
-      $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = b_piercing[i];
+    //   $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
 
   $("button#btnB_Bludgeoning").click(function() {
     // MINOR/BLUDGEONING TABLE
-    const b_bludgeoning = ["2 For 1<br>Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.", 
-    "And Stay Down!<br>Target suffers maximum damage and is knocked prone.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.", 
-    "Armor Dent<br>Target suffers maximum damage and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.", 
-    "Back Breaker<br>Target suffers maximum plus bonus damage and 1d4 Dex damage.<br>Save: DC 20 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.", 
-    "Bell Ringer<br>Target suffers maximum damage, 1 Int damage and is sickened for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the sickened condition. Rest or restoration magic is needed to heal ability damage.", 
-    "Bone Masher<br>Target suffers maximum damage and suffers either 1d2 Dex damage and half speed (leg) or 1d2 Str damage (arm) and limb is useless until healed.<br>Save: DC 20 Constitution negates limb damage; deals bonus damage instead.<br>Heal: A DC 20 Heal check allows limb use and removes movement penalties. Rest or restoration magic is needed to heal ability damage.<br><br>D20 Bone Masher Injury:<br>1-5 Left Leg<br>6-10 Left Arm<br>11-15 Right Leg<br>16-20 Right Arm",
-    "Box the Ears<br>Target suffers maximum damage and is deafened for 1d3 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A cure blindness/deafness spell or a DC 20 Heal check removes the deafened condition.", 
-    "Brained<br>Target suffers maximum damage and is staggered for 1d2 rounds.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A full-round action used to recover can remove the staggered condition.", 
-    "Breathless<br>Target suffers maximum damage and becomes fatigued for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest.", 
-    "Broken Leg<br>Target suffers maximum damage plus 1d2 Dex and 1d2 Con damage and target’s speeds are reduced by half until healed.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the movement penalty, but rest or restorative magic is needed to heal ability damage.", 
-    "Broken Ribs<br>Target suffers maximum and bonus damage plus cannot heal naturally for 1 day.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Curative magic.", 
-    "Collapsed Lung<br>Target suffers maximum damage and is staggered for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the staggered condition.", 
-    "Concussion<br>Target suffers maximum damage and 1 Int and Wis damage.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic.", 
-    "Cracked Knee<br>Target suffers maximum damage and 1 Dex damage. Target’s base land speed reduced to 10 feet until healed.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the movement penalty, but rest or restorative magic is needed to heal ability damage.", 
-    "Cracked Rib<br>Target suffers maximum damage, 1 Con damage, and is fatigued.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest and restorative magic.", 
-    "Crumpling Blow<br>Target suffers maximum damage and is knocked prone.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Recover: Target must expend a move-equivalent action to stand from prone. This provokes an attack of opportunity from all threatening opponents.", 
-    "Crunch<br>Target suffers maximum damage and is sickened for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the sickened condition.", 
-    "Crushed Intestines<br>Target suffers maximum damage and 1 Con damage.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.", 
-    "Crushed Trachea<br>Target suffers maximum damage and cannot breathe or speak for 1 minute.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the condition.", 
-    "Earth Rumble<br>Target suffers maximum damage and target is knocked prone.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Recover: Standing from prone is a move-equivalent action that provokes attacks of opportunity from all threatening opponents.", 
-    "Feeble Parry<br>Target suffers maximum damage and is disarmed of 1 held item (attacker’s choice). Object is thrown 1d6 squares in a random direction.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Recover: Picking up a dropped object is a move equivalent action that provokes attacks of opportunity from threatening opponents.", 
-    "I See Stars<br>Target suffers maximum damage and a 20% miss chance for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check negates the miss chance.", 
-    "Knockback<br>Target suffers maximum plus bonus damage and is pushed 1 square directly away.<br>Save: DC 20 Constitution negates; deals additional bonus damage instead.", 
-    "Lights Out<br>Target suffers maximum damage and is blinded for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the blinded condition.", 
-    "Low Blow<br>Target suffers maximum damage and is sickened for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check negates the sickened condition.", 
-    "Mace to Da Face<br>Target suffers maximum damage and is dazed for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the dazed condition.", 
-    "Momentum<br>You deal maximum damage and gain a +1 circumstance bonus on all your attack rolls until the end of your next turn.", 
-    "My Teef!<br>Target suffers maximum damage. Target’s bite attacks are at a -2 penalty, and target suffers a 20% spell failure chance (-4 to casting rolls) for verbal spells.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check repairs teeth, removing bite penalty and removing the spell failure chance.", 
-    "Nighty Night<br>Target suffers maximum damage, falls prone, and is unconscious for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check allows the target to regain consciousness.<br>Recover: A move equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.", 
-    "Numbing Blow<br>Target suffers maximum damage, 1 Dex damage, and target is disarmed of 1 item (attacker’s choice). Object is dropped in target’s square.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Recover: Picking up an item is a move-equivalent action that provokes attacks of opportunity from threatening opponents.", 
-    "Off-Balance<br>Target suffers maximum damage and provokes attacks of opportunity from all threatening opponents.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.", 
-    "Pimp Slap<br>Target suffers maximum damage and target is dazed for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: By expending a move action to clear your head you may end the dazed condition.", 
-    "Rattled<br>Target suffers maximum damage and is confused for 1 round.<br>Save: DC 20 Resolve negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the confused condition.", 
-    "Roundhouse<br>Target suffers maximum damage and you gain a free attack against a threatened foe adjacent to the original target at a -4 penalty. If no additional target exists, deal bonus damage again to the original target.", 
-    "Ruptured Organ<br>Target suffers maximum damage and 1d4 bleed. This bleed can only be cured with magic.<br>Save: DC 20 Constitution negates bleed; deals bonus damage instead.<br>Heal: A DC 20 Heal check halves the bleed effect.", 
-    "Shattered Hand<br>Target suffers maximum damage and 1 Str damage. All attacks and skill checks using that hand suffer a -2 penalty.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes penalties, but rest or restorative magic is needed to heal ability damage.", 
-    "Shattered Nose<br>Target suffers maximum damage, 1d2 Cha damage, and 1d2 bleed.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check heals the bleed effect, but rest or restorative magic is needed to heal ability damage.", 
-    "Shield Smack<br>Target suffers maximum damage and target’s shield is loosened, causing it to no longer grant its shield bonus for that round.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Special: If target is not using a shield, deals additional bonus damage instead.", 
-    "Skull Crack<br>Target suffers maximum damage and 1d2 Int damage.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restoration magic.", 
-    "Solid Blow<br>You deal maximum and bonus damage again.<br>Save: None", 
-    "Split Open<br>Target suffers maximum damage and 1d4 bleed.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 15 Heal check halves the bleed effect, while a DC 20 Heal check ends it.", 
-    "Spun Around<br>Target suffers maximum damage and is flat-footed for 1 round.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.", 
-    "Staggering Blow<br>Target suffers maximum damage and bonus damage again as non-lethal damage.<br>Heal: Nonlethal damage heals naturally at a rate of 1 point per hour.", 
-    "Surprise Opening<br>Target suffers maximum damage and you may make one additional free attack against the target at your current attack bonus -4.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.", 
-    "Terrible Bruise<br>Target suffers maximum damage and 1d6 nonlethal damage.<br>Heal: Nonlethal damage heals naturally at a rate of 1 point per hour.<br>Save: None.", 
-    "Thunder Strike<br>Target suffers maximum damage and is deafened for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the deafened condition.", 
-    "Tiring Blow<br>Target suffers maximum damage and becomes fatigued.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Short or Long Rest.", 
-    "To Your Thinky Bits<br>Target suffers maximum damage and 1 Int damage.<br>Save: Constitution 20 negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to restore ability damage.", 
-    "What's Going On?<br>Target suffers maximum plus bonus damage again and 1d2 hours of target’s memory is erased.<br>Save: DC 20 Constitution save negates; deals additional bonus damage instead.<br>Heal: A DC 20 Heal check restores target’s memory (no retry).", 
+    const b_bludgeoning = ["2 For 1<br>Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.",
+    "And Stay Down!<br>Target suffers maximum damage and is knocked prone.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
+    "Armor Dent<br>Target suffers maximum damage and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
+    "Back Breaker<br>Target suffers maximum plus bonus damage and 1d4 Dex damage.<br>Save: DC 20 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
+    "Bell Ringer<br>Target suffers maximum damage, 1 Int damage and is sickened for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the sickened condition. Rest or restoration magic is needed to heal ability damage.",
+    "Bone Masher<br>Target suffers maximum damage and suffers either 1d2 Dex damage and half speed (leg) or 1d2 Str damage (arm) and limb is useless until healed.<br>Save: DC 20 Constitution negates limb damage; deals bonus damage instead.<br>Heal: A DC 20 Heal check allows limb use and removes movement penalties. Rest or restoration magic is needed to heal ability damage.<br><br>D10 - Injury<br>1-5 Left Leg<br>6-10 Left Arm<br>11-15 Right Leg<br>16-20 Right Arm",
+    "Box the Ears<br>Target suffers maximum damage and is deafened for 1d3 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A cure blindness/deafness spell or a DC 20 Heal check removes the deafened condition.",
+    "Brained<br>Target suffers maximum damage and is staggered for 1d2 rounds.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A full-round action used to recover can remove the staggered condition.",
+    "Breathless<br>Target suffers maximum damage and becomes fatigued for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest.",
+    "Broken Leg<br>Target suffers maximum damage plus 1d2 Dex and 1d2 Con damage and target’s speeds are reduced by half until healed.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the movement penalty, but rest or restorative magic is needed to heal ability damage.",
+    "Broken Ribs<br>Target suffers maximum plus bonus damage again and cannot heal naturally for 1 day.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Curative magic.",
+    "Collapsed Lung<br>Target suffers maximum damage and is staggered for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the staggered condition.",
+    "Concussion<br>Target suffers maximum damage and 1 Int and Wis damage.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic.",
+    "Cracked Knee<br>Target suffers maximum damage and 1 Dex damage. Target’s base land speed reduced to 10 feet until healed.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the movement penalty, but rest or restorative magic is needed to heal ability damage.",
+    "Cracked Rib<br>Target suffers maximum damage, 1 Con damage, and is fatigued.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest and restorative magic.",
+    "Crumpling Blow<br>Target suffers maximum damage and is knocked prone.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Recover: Target must expend a move-equivalent action to stand from prone. This provokes an attack of opportunity from all threatening opponents.",
+    "Crunch<br>Target suffers maximum damage and is sickened for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the sickened condition.",
+    "Crushed Intestines<br>Target suffers maximum damage and 1 Con damage.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.",
+    "Crushed Trachea<br>Target suffers maximum damage and cannot breathe or speak for 1 minute.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the condition.",
+    "Earth Rumble<br>Target suffers maximum damage and target is knocked prone.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Recover: Standing from prone is a move-equivalent action that provokes attacks of opportunity from all threatening opponents.",
+    "Feeble Parry<br>Target suffers maximum damage and is disarmed of 1 held item (attacker’s choice). Object is thrown 1d6 squares in a random direction.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Recover: Picking up a dropped object is a move equivalent action that provokes attacks of opportunity from threatening opponents.",
+    "I See Stars<br>Target suffers maximum damage and a 20% miss chance for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check negates the miss chance.",
+    "Knockback<br>Target suffers maximum plus bonus damage and is pushed 1 square directly away.<br>Save: DC 20 Strength negates; deals additional bonus damage instead.",
+    "Lights Out<br>Target suffers maximum damage and is blinded for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the blinded condition.",
+    "Low Blow<br>Target suffers maximum damage and is sickened for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check negates the sickened condition.",
+    "Mace to Da Face<br>Target suffers maximum damage and is dazed for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the dazed condition.",
+    "Momentum<br>You deal maximum damage and gain a +2 circumstance bonus on all your attack rolls until the end of your next turn.",
+    "My Teef!<br>Target suffers maximum damage. Target’s bite attacks are at a -2 penalty, and target suffers a 20% spell failure chance (-4 to casting rolls) for verbal spells.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check repairs teeth, removing bite penalty and removing the spell failure chance.",
+    "Nighty Night<br>Target suffers maximum damage, falls prone, and is unconscious for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check allows the target to regain consciousness.<br>Recover: A move equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
+    "Numbing Blow<br>Target suffers maximum damage, 1 Dex damage, and target is disarmed of 1 item (attacker’s choice). Object is dropped in target’s square.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Recover: Picking up an item is a move-equivalent action that provokes attacks of opportunity from threatening opponents.",
+    "Off Balance<br>Target suffers maximum damage and provokes attacks of opportunity from all threatening opponents.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.",
+    "Pimp Slap<br>Target suffers maximum damage and target is dazed for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: By expending a move action to clear your head you may end the dazed condition.",
+    "Rattled<br>Target suffers maximum damage and is confused for 1 round.<br>Save: DC 20 Resolve negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the confused condition.",
+    "Roundhouse<br>Target suffers maximum damage and you gain a free attack against a threatened foe adjacent to the original target at a -4 penalty. If no additional target exists, deal bonus damage again to the original target.",
+    "Ruptured Organ<br>Target suffers maximum damage and 1d4 bleed. This bleed can only be cured with magic.<br>Save: DC 20 Constitution negates bleed; deals bonus damage instead.<br>Heal: A DC 20 Heal check halves the bleed effect.",
+    "Shattered Hand<br>Target suffers maximum damage and 1 Str damage. All attacks and skill checks using that hand suffer a -2 penalty.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes penalties, but rest or restorative magic is needed to heal ability damage.",
+    "Shattered Nose<br>Target suffers maximum damage, 1d2 Cha damage, and 1d2 bleed.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check heals the bleed effect, but rest or restorative magic is needed to heal ability damage.",
+    "Shield Smack<br>Target suffers maximum damage and target’s shield is loosened, causing it to no longer grant its shield bonus for that round.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Special: If target is not using a shield, deals additional bonus damage instead.",
+    "Skull Crack<br>Target suffers maximum damage and 1d2 Int damage.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restoration magic.",
+    "Solid Blow<br>You deal maximum damage plus bonus damage again.<br>Save: None",
+    "Split Open<br>Target suffers maximum damage and 1d4 bleed.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 15 Heal check halves the bleed effect, while a DC 20 Heal check ends it.",
+    "Spun Around<br>Target suffers maximum damage and is flat-footed for 1 round.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.",
+    "Staggering Blow<br>Target suffers maximum damage and bonus damage again as non-lethal damage.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Nonlethal damage heals naturally at a rate of 1 point per hour.",
+    "Surprise Opening<br>Target suffers maximum damage and you may make one additional free attack against the target at a -4 penalty.",
+    "Terrible Bruise<br>Target suffers maximum damage and 1d6 nonlethal damage.<br>Heal: Nonlethal damage heals naturally at a rate of 1 point per hour.<br>Save: None.",
+    "Thunder Strike<br>Target suffers maximum damage and is deafened for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the deafened condition.",
+    "Tiring Blow<br>Target suffers maximum damage and becomes fatigued.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Short or Long Rest.",
+    "To Your Thinky Bits<br>Target suffers maximum damage and 1 Int damage.<br>Save: Constitution 20 negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to restore ability damage.",
+    "What’s Going On?<br>Target suffers maximum plus bonus damage again and 1d2 hours of target’s memory is erased.<br>Save: DC 20 Constitution save negates; deals additional bonus damage instead.<br>Heal: A DC 20 Heal check restores target’s memory (no retry).",
     "Where Am I?<br>Target suffers maximum damage and is dazed for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead."
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = b_bludgeoning[randomNumber];
-    // $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = b_bludgeoning[randomNumber];
+    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = b_bludgeoning[i];
-      $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = b_bludgeoning[i];
+    //   $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -519,14 +520,14 @@ $(document).ready(function() {
     "Wild Surge<br>Maximize all spell variables and you gain a +2 critical range and critical fumble range for all spells you cast until the end of your next turn.(Critical Threat 18-20, Critical Fumble 1-3<br>Save: If the spell targeted an opponent DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead."    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = b_magic[randomNumber];
-    // $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = b_magic[randomNumber];
+    $("#text").prepend("<p class=\"green\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = b_magic[i];
-      $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = b_magic[i];
+    //   $("#text").prepend("<p class=\"green\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -585,14 +586,14 @@ $(document).ready(function() {
     "Wide Open<br>Target suffers maximum damage and provokes attacks of opportunity from all threatening opponents.<br>Save: DC 25 Dexterity negates; deals bonus damage instead.<br>Special: If no opponents threaten, deal additional bonus damage instead."    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = m_slashing[randomNumber];
-    // $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = m_slashing[randomNumber];
+    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = m_slashing[i];
-      $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = m_slashing[i];
+    //   $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -651,14 +652,14 @@ $(document).ready(function() {
     "Vulnerable Spot<br>Target suffers maximum damage plus bonus damage again and takes 1d3 random ability damage.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha"    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = m_piercing[randomNumber];
-    // $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = m_piercing[randomNumber];
+    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = m_piercing[i];
-      $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = m_piercing[i];
+    //   $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -670,12 +671,12 @@ $(document).ready(function() {
     "Armor Dent<br>Target suffers maximum damage plus bonus damage again and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 25 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
     "Back Breaker<br>Target suffers maximum plus bonus damage and 1d6 Dex damage.<br>Save: DC 25 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
     "Bell Ringer<br>Target suffers maximum damage, 1d2 Int damage and is sickened for 1d3 rounds.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check removes the sickened condition. Rest or restoration magic is needed to heal ability damage.",
-    "Bone Masher<br>Target suffers maximum damage and suffers either 1d3 Dex damage and half speed (leg) or 1d3 Str damage (arm) and limb is useless until healed.<br>Save: DC 25 Constitution negates limb damage; deals bonus damage instead.<br>Heal: A DC 25 Heal check allows limb use and removes movement penalties. Rest or restoration magic is needed to heal ability damage.<br><br>D20 Bone Masher Injury:<br>1-5 Left Leg<br>6-10 Left Arm<br>11-15 Right Leg<br>16-20 Right Arm",
+    "Bone Masher<br>Target suffers maximum damage plus bonus damage again and suffers either 1d3 Dex damage and half speed (leg) or 1d3 Str damage (arm) and limb is useless until healed.<br>Save: DC 25 Constitution negates limb damage; deals bonus damage instead.<br>Heal: A DC 25 Heal check allows limb use and removes movement penalties. Rest or restoration magic is needed to heal ability damage.<br><br>D10 - Injury<br>1-5 Left Leg<br>6-10 Left Arm<br>11-15 Right Leg<br>16-20 Right Arm",
     "Box the Ears<br>Target suffers maximum damage and is deafened for 1d4 rounds.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A cure blindness/deafness spell or a DC 25 Heal check removes the deafened condition.",
     "Brained<br>Target suffers maximum damage and is staggered for 1d3 rounds.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A full-round action used to recover can remove the staggered condition.",
     "Breathless<br>Target suffers maximum damage and is fatigued for 1d2 rounds.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: Rest.",
     "Broken Leg<br>Target suffers maximum damage plus bonus damage again  plus1d2 Dex and 1d2 Con damage and target’s speeds are reduced by half until healed.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check removes the movement penalty, but rest or restorative magic is needed to heal ability damage.",
-    "Broken Ribs<br>Target suffers maximum and bonus damage plus cannot heal naturally for 1d2 days.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: Curative magic.",
+    "Broken Ribs<br>Target suffers maximum plus bonus damage again and cannot heal naturally for 1d2 days.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: Curative magic.",
     "Collapsed Lung<br>Target suffers maximum damage and is staggered for 1d2 minutes.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check removes the staggered condition.",
     "Concussion<br>Target suffers maximum damage plus bonus damage again and 1 Int and Wis damage.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic.",
     "Cracked Knee<br>Target suffers maximum damage and 1d2 Dex damage. Target’s base land speed reduced to 10 feet until healed.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check removes the movement penalty, but rest or restorative magic is needed to heal ability damage.",
@@ -687,11 +688,11 @@ $(document).ready(function() {
     "Earth Rumble<br>Target suffers maximum damage and target plus all adjacent opponents are knocked prone.<br>Save: DC 25 Dexterity negates; deals bonus damage instead.<br>Recover: Standing from prone is a move-equivalent action that provokes attacks of opportunity from all threatening opponents.",
     "Feeble Parry<br>Target suffers maximum damage and is disarmed of 1 held item (attacker’s choice). Object is thrown 1d6 squares in a random direction.<br>Save: DC 25 Dexterity negates; deals bonus damage instead.<br>Recover: Picking up a dropped object is a move equivalent action that provokes attacks of opportunity from threatening opponents.",
     "I See Stars<br>Target suffers maximum damage and a 25% miss chance for 1d3 rounds.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check negates the miss chance.",
-    "Knockback<br>Target suffers maximum plus bonus damage again and is pushed 1d3 squares directly away.<br>Save: DC 25 Constitution negates; deals additional bonus damage instead.",
+    "Knockback<br>Target suffers maximum plus bonus damage again and is pushed 1d3 squares directly away.<br>Save: DC 25 Strength negates; deals additional bonus damage instead.",
     "Lights Out<br>Target suffers maximum damage and is blinded for 1d2 rounds.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check removes the blinded condition.",
-    "Low Blow<br>Target suffers maximum damage plus bonus damage and is sickened for 1d2 rounds.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check negates the sickened condition.",
+    "Low Blow<br>Target suffers maximum damage plus bonus damage again and is sickened for 1d2 rounds.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check negates the sickened condition.",
     "Mace to Da Face<br>Target suffers maximum damage and is dazed and blinded for 1 round.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check removes the dazed condition.",
-    "Momentum<br>You deal maximum damage and gain a +2 circumstance bonus on all your attack rolls until the end of your next turn.",
+    "Momentum<br>You deal maximum damage and gain a +3 circumstance bonus on all your attack rolls until the end of your next turn.",
     "My Teef!<br>Target suffers maximum damage and 1 Con damage. Target’s bite attacks are at a -2 penalty, and target suffers a 25% spell failure chance (-5 to casting rolls) for verbal spells.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check repairs teeth, removing bite penalty and removing the spell failure chance.",
     "Nighty Night<br>Target suffers maximum damage, falls prone, and is unconscious for 1d2 rounds.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check allows the target to regain consciousness.<br>Recover: A move equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
     "Numbing Blow<br>Target suffers maximum damage, 1d2 Dex damage, and target is disarmed of 1 item (attacker’s choice). Object is dropped in target’s square.<br>Save: DC 25 Dexterity negates; deals bonus damage instead.<br>Heal: Rest and restorative magic can heal the ability damage.<br>Recover: Picking up an item is a move-equivalent action that provokes attacks of opportunity from threatening opponents.",
@@ -702,29 +703,29 @@ $(document).ready(function() {
     "Ruptured Organ<br>Target suffers maximum damage and 1d6 bleed. This bleed can only be cured with magic.<br>Save: DC 25 Constitution negates bleed; deals bonus damage instead.<br>Heal: A DC 25 Heal check halves the bleed effect.",
     "Shattered Hand<br>Target suffers maximum damage and 1 Con and Str damage. All attacks and skill checks using that hand suffer a -2 penalty.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check removes penalties, but rest or restorative magic is needed to heal ability damage.",
     "Shattered Nose<br>Target suffers maximum damage, 1d4 Cha damage, and 1d4 bleed.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check heals the bleed effect, but rest or restorative magic is needed to heal ability damage.",
-    "Shield Smack<br>Target suffers maximum damage plus bonus damage again and target’s shield is loosened, causing it to no longer grant its shield bonus for that round, or off-hand weapon is disarmed landing in the targets square.<br>Save: A DC 25 Dexterity save negates; deals bonus damage instead.<br>Special: If target is not using a shield, deals additional bonus damage instead.",
+    "Shield Smack<br>Target suffers maximum damage plus bonus damage again and target’s shield is loosened, causing it to no longer grant its shield bonus for that round, or off-hand weapon is disarmed landing in the targets square.<br>Save: A DC 25 Dexterity save negates; deals bonus damage instead.<br>Special: If target is not using a shield, deals additional bonus damage instead.<br>Recover: Picking up an item is a move-equivalent action that provokes attacks of opportunity from threatening opponents.",
     "Skull Crack<br>Target suffers maximum damage and 1d4 Int damage.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restoration magic.",
-    "Solid Blow<br>You deal maximum and double bonus damage again.<br>Save: None",
+    "Solid Blow<br>You deal maximum damage plus double bonus damage again.<br>Save: None",
     "Split Open<br>Target suffers maximum damage and 2d4 bleed.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 15 Heal check halves the bleed effect, while a DC 25 Heal check ends it.",
     "Spun Around<br>Target suffers maximum damage and is flat-footed for 1d2 rounds.<br>Save: A DC 25 Dexterity negates; deals bonus damage instead.",
-    "Staggering Blow<br>Target suffers maximum damage plus bonus damage again. And suffers an equal amount of nonlethal damage.<br>Heal: Nonlethal damage heals naturally at a rate of 1 point per hour.",
-    "Surprise Opening<br>Target suffers maximum damage and you may make one additional free attack against the target at your current attack bonus -2.<br>Save: DC 25 Dexterity negates; deals bonus damage instead.",
+    "Staggering Blow<br>Target suffers maximum damage plus bonus damage again. And suffers an equal amount of nonlethal damage.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: Nonlethal damage heals naturally at a rate of 1 point per hour.",
+    "Surprise Opening<br>Target suffers maximum damage and you may make one additional free attack against the target at a -2 penalty.",
     "Terrible Bruise<br>Target suffers maximum damage and 2d6 nonlethal damage.<br>Heal: Nonlethal damage heals naturally at a rate of 1 point per hour.<br>Save: None.",
     "Thunder Strike<br>Target suffers maximum damage and is deafened for 1d2 rounds.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check removes the deafened condition.",
     "Tiring Blow<br>Target suffers maximum damage plus bonus damage again and becomes fatigued.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Heal: Short or Long Rest.",
     "To Your Thinky Bits<br>Target suffers maximum damage plus bonus damage again and 1 Int damage.<br>Save: Constitution 25 negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to restore ability damage.",
     "What’s Going On?<br>Target suffers maximum plus bonus damage again and 1d4 hours of target’s memory is erased.<br>Save: DC 25 Constitution save negates; deals additional bonus damage instead.<br>Heal: A DC 25 Heal check restores target’s memory (no retry).",
-    "Where Am I?<br>Target suffers maximum damage plus bonus damage again and is stunned for 1 round.<br>Save: DC 25 Constitution negates; deals bonus damage instead.",
+    "Where Am I?<br>Target suffers maximum damage plus bonus damage again and is stunned for 1 round.<br>Save: DC 25 Constitution negates; deals bonus damage instead."    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = m_bludgeoning[randomNumber];
-    // $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = m_bludgeoning[randomNumber];
+    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = m_bludgeoning[i];
-      $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = m_bludgeoning[i];
+    //   $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -783,14 +784,14 @@ $(document).ready(function() {
     "Wild Surge<br>Maximize all spell variables and you gain a +5 critical range and critical fumble range for all spells you cast until the end of your next turn. (Critical Threat 15-20, Critical Fumble 1-6<br>Save: If the spell targeted an opponent DC 25 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead."    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = m_magic[randomNumber];
-    // $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = m_magic[randomNumber];
+    $("#text").prepend("<p class=\"yellow\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = m_magic[i];
-      $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = m_magic[i];
+    //   $("#text").prepend("<p class=\"yellow\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -849,14 +850,14 @@ $(document).ready(function() {
     "Wide Open<br>Target suffers maximum damage plus bonus damage again and provokes attacks of opportunity from all threatening opponents.<br>Save: DC 30 Dexterity negates; deals bonus damage instead.<br>Special: If no opponents threaten, deal additional bonus damage instead."    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = s_slashing[randomNumber];
-    // $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = s_slashing[randomNumber];
+    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = s_slashing[i];
-      $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = s_slashing[i];
+    //   $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -915,80 +916,80 @@ $(document).ready(function() {
     "Vulnerable Spot<br>Target suffers maximum damage plus bonus damage again and takes 1d4 random ability damage.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha"    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = s_piercing[randomNumber];
-    // $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = s_piercing[randomNumber];
+    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = s_piercing[i];
-      $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = s_piercing[i];
+    //   $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
 
   $("button#btnS_Bludgeoning").click(function() {
     // SEVERE/BLUDGEONING Table
-    const s_bludgeoning = ["2 For 1<br>Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.",
-    "And Stay Down!<br>Target suffers maximum damage and is knocked prone.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
-    "Armor Dent<br>Target suffers maximum damage and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage to target instead.",
-    "Back Breaker<br>Target suffers maximum plus bonus damage and 1d4 Dex damage.<br>Save: DC 20 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
-    "Bell Ringer<br>Target suffers maximum damage, 1 Int damage and is sickened for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the sickened condition. Rest or restoration magic is needed to heal ability damage.",
-    "Bone Masher<br>Target suffers maximum damage and suffers either 1d2 Dex damage and half speed (leg) or 1d2 Str damage (arm) and limb is useless until healed.<br>Save: DC 20 Constitution negates limb damage; deals bonus damage instead.<br>Heal: A DC 20 Heal check allows limb use and removes movement penalties. Rest or restoration magic is needed to heal ability damage.<br><br>D20 Bone Masher Injury:<br>1-5 Left Leg<br>6-10 Left Arm<br>11-15 Right Leg<br>16-20 Right Arm",
-    "Box the Ears<br>Target suffers maximum damage and is deafened for 1d3 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A cure blindness/deafness spell or a DC 20 Heal check removes the deafened condition.",
-    "Brained<br>Target suffers maximum damage and is staggered for 1d2 rounds.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A full-round action used to recover can remove the staggered condition.",
-    "Breathless<br>Target suffers maximum damage and becomes fatigued.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest.",
-    "Broken Leg<br>Target suffers maximum damage plus 1 Dex and 1 Con damage and target’s speeds are reduced by half until healed.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the movement penalty, but rest or restorative magic is needed to heal ability damage.",
-    "Broken Ribs<br>Target suffers maximum and bonus damage plus cannot heal naturally for 1 day.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Curative magic.",
-    "Collapsed Lung<br>Target suffers maximum damage and is staggered for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the staggered condition.",
-    "Concussion<br>Target suffers maximum damage and 1 Int and Wis damage.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic.",
-    "Cracked Knee<br>Target suffers maximum damage and 1 Dex damage. Target’s base land speed reduced to 10 feet until healed.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the movement penalty, but rest or restorative magic is needed to heal ability damage.",
-    "Cracked Rib<br>Target suffers maximum damage, 1 Con damage, and is fatigued.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest and restorative magic.",
-    "Crumpling Blow<br>Target suffers maximum damage and is knocked prone.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Recover: Target must expend a move-equivalent action to stand from prone. This provokes an attack of opportunity from all threatening opponents.",
-    "Crunch<br>Target suffers maximum damage and is sickened for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the sickened condition.",
-    "Crushed Intestines<br>Target suffers maximum damage and 1 Con damage.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.",
-    "Crushed Trachea<br>Target suffers maximum damage and cannot breathe or speak for 1 minute.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the condition.",
-    "Earth Rumble<br>Target suffers maximum damage and target is knocked prone.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Recover: Standing from prone is a move-equivalent action that provokes attacks of opportunity from all threatening opponents.",
-    "Feeble Parry<br>Target suffers maximum damage and is disarmed of 1 held item (attacker’s choice). Object is thrown 1d6 squares in a random direction.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Recover: Picking up a dropped object is a move equivalent action that provokes attacks of opportunity from threatening opponents.",
-    "I See Stars<br>Target suffers maximum damage and a 20% miss chance for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check negates the miss chance.",
-    "Knockback<br>Target suffers maximum plus bonus damage and is pushed 1 square directly away.<br>Save: DC 20 Constitution negates; deals additional bonus damage instead.",
-    "Lights Out<br>Target suffers maximum damage and is blinded for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the blinded condition.",
-    "Low Blow<br>Target suffers maximum damage and is sickened for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check negates the sickened condition.",
-    "Mace to Da Face<br>Target suffers maximum damage and is dazed for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the dazed condition.",
-    "Momentum<br>You deal maximum damage and gain a +1 circumstance bonus on all your attack rolls until the end of your next turn.",
-    "My Teef!<br>Target suffers maximum damage. Target’s bite attacks are at a -2 penalty, and target suffers a 20% spell failure chance (-4 to casting rolls) for verbal spells.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check repairs teeth, removing bite penalty and removing the spell failure chance.",
-    "Nighty Night<br>Target suffers maximum damage, falls prone, and is unconscious for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check allows the target to regain consciousness.<br>Recover: A move equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
-    "Numbing Blow<br>Target suffers maximum damage, 1 Dex damage, and target is disarmed of 1 item (attacker’s choice). Object is dropped in target’s square.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.<br>Recover: Picking up an item is a move-equivalent action that provokes attacks of opportunity from threatening opponents.",
-    "Off Balance<br>Target suffers maximum damage and provokes attacks of opportunity from all threatening opponents.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.",
-    "Pimp Slap<br>Target suffers maximum damage and target is dazed for 1d2 rounds.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: By expending a move action to clear your head you may end the dazed condition.",
-    "Rattled<br>Target suffers maximum damage and is confused for 1 round.<br>Save: DC 20 Resolve negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the confused condition.",
-    "Roundhouse<br>Target suffers maximum damage and you gain a free attack against a threatened foe adjacent to the original target at a -4 penalty. If no additional target exists, deal bonus damage again to the original target.",
-    "Ruptured Organ<br>Target suffers maximum damage and 1d4 bleed. This bleed can only be cured with magic.<br>Save: DC 20 Constitution negates bleed; deals bonus damage instead.<br>Heal: A DC 20 Heal check halves the bleed effect.",
-    "Shattered Hand<br>Target suffers maximum damage and 1 Str damage. All attacks and skill checks using that hand suffer a -2 penalty.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes penalties, but rest or restorative magic is needed to heal ability damage.",
-    "Shattered Nose<br>Target suffers maximum damage, 1d2 Cha damage, and 1d2 bleed.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check heals the bleed effect, but rest or restorative magic is needed to heal ability damage.",
-    "Shield Smack<br>Target suffers maximum damage and target’s shield is loosened, causing it to no longer grant its shield bonus for that round.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Special: If target is not using a shield, deals additional bonus damage instead.",
-    "Skull Crush<br>Target’s skull is crushed and immediately dies.<br>DC 30 Constitution negates death; deals maximum damage plus 2d4 Int drain instead.<br>Heal: Rest or restoration magic.",
-    "Solid Blow<br>You deal maximum and bonus damage again.<br>Save: None",
-    "Split Open<br>Target suffers maximum damage and 1d4 bleed.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 15 Heal check halves the bleed effect, while a DC 20 Heal check ends it.",
-    "Spun Around<br>Target suffers maximum damage and is flat-footed for 1 round.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.",
-    "Staggering Blow<br>Target suffers maximum damage and bonus damage again as non-lethal damage.<br>Heal: Nonlethal damage heals naturally at a rate of 1 point per hour.",
-    "Surprise Opening<br>Target suffers maximum damage and you may make one additional free attack against the target at your current attack bonus -5.<br>Save: DC 20 Dexterity negates; deals bonus damage instead.",
-    "Terrible Bruise<br>Target suffers maximum damage and 1d6 nonlethal damage.<br>Heal: Nonlethal damage heals naturally at a rate of 1 point per hour.<br>Save: None.",
-    "Thunder Strike<br>Target suffers maximum damage and is deafened for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check removes the deafened condition.",
-    "Tiring Blow<br>Target suffers maximum damage and becomes fatigued.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Heal: Short or Long Rest.",
-    "To Your Thinky Bits<br>Target suffers maximum damage and 1 Int damage.<br>Save: Constitution 20 negates; deals bonus damage instead.<br>Heal: Rest or restorative magic is needed to restore ability damage.",
-    "What’s Going On?<br>Target suffers maximum plus bonus damage and 1d2 hours of target’s memory is erased.<br>Save: DC 20 Constitution save negates; deals additional bonus damage instead.<br>Heal: A DC 20 Heal check restores target’s memory (no retry).",
-    "Where Am I?<br>Target suffers maximum damage and is dazed for 1 round.<br>Save: DC 20 Constitution negates; deals bonus damage instead.",
+    const s_bludgeoning = ["2 For 1<br>Target suffers maximum damage plus bonus damage again and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 30 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage again to original target.",
+    "And Stay Down!<br>Target suffers maximum damage plus bonus damage again and is knocked prone and unconscious for 1 round.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
+    "Armor Dent<br>Target suffers maximum damage plus double bonus damage again and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 30 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
+    "Back Breaker<br>Target suffers maximum plus bonus damage and 2d4 Dex damage.<br>Save: DC 30 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
+    "Bell Ringer<br>Target suffers maximum damage, 1d2 Int damage and is nauseated for 1d3 rounds.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check removes the nauseated condition. Rest or restoration magic is needed to heal ability damage.",
+    "Bone Masher<br>Target suffers maximum damage plus bonus damage again and suffers either 1d4 Dex damage and half speed (leg) or 1d4 Str damage (arm) and limb is useless until healed.<br>Save: DC 30 Constitution negates limb damage; deals bonus damage instead.<br>Heal: A DC 30 Heal check allows limb use and removes movement penalties. Rest or restoration magic is needed to heal ability damage.<br><br>D10 - Injury<br>1-5 Left Leg<br>6-10 Left Arm<br>11-15 Right Leg<br>16-20 Right Arm",
+    "Box the Ears<br>Target suffers maximum damage plus bonus damage again and is deafened for 1d6 rounds.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A cure blindness/deafness spell or a DC 30 Heal check removes the deafened condition.",
+    "Brained<br>Target suffers maximum damage plus bonus damage again and is staggered for 1d3 rounds.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check removes the staggered condition.",
+    "Breathless<br>Target suffers maximum damage plus bonus damage again and is exhausted for 1d3 rounds.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check reduced exhaustion to fatigue. A second Heal check removes fatigue, as dose rest.",
+    "Broken Leg<br>Target suffers maximum damage plus bonus damage again plus1d4 Dex and 1d4 Con damage and target’s speeds are reduced by half until healed.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check removes the movement penalty, but rest or restorative magic is needed to heal ability damage.",
+    "Broken Ribs<br>Target suffers maximum plus bonus damage again and cannot heal naturally for 1d4 days.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: Curative magic.",
+    "Collapsed Lung<br>Target suffers maximum damage plus bonus damage again and is staggered for 1d4 minutes.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check removes the staggered condition.",
+    "Concussion<br>Target suffers maximum damage plus bonus damage again and is staggered for 1d4 minutes.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check removes the staggered condition.",
+    "Cracked Knee<br>Target suffers maximum damage and 1d3 Dex damage. Target’s base land speed reduced to 5 feet until healed.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check removes the movement penalty, but rest or restorative magic is needed to heal ability damage.",
+    "Cracked Rib<br>Target suffers maximum damage plus bonus damage again, 1d3 Con damage, and is fatigued.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: Rest and restorative magic.",
+    "Crumpling Blow<br>Target suffers maximum damage plus bonus damage again and is knocked prone.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Recover: Target must expend a move-equivalent action to stand from prone. This provokes an attack of opportunity from all threatening opponents.",
+    "Crunch<br>Target suffers maximum damage plus bonus damage again and is sickened for 1d6 rounds.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check removes the sickened condition.",
+    "Crushed Intestines<br>Target suffers maximum damage plus bonus damage again and 1d2 Con bleed.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: a DC 30 Heal check stops the Con Bleed, while Rest or restorative magic is needed to heal ability damage.",
+    "Crushed Trachea<br>Target suffers maximum damage plus bonus damage again and cannot breathe or speak.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check ends the condition.",
+    "Earth Rumble<br>Target suffers maximum damage plus bonus damage again and target plus all adjacent opponents are knocked prone.<br>Save: DC 30 Dexterity negates; deals bonus damage instead.<br>Recover: Standing from prone is a move-equivalent action that provokes attacks of opportunity from all threatening opponents.",
+    "Feeble Parry<br>Target suffers maximum damage, 1d2 Dex Damage, and is disarmed of 1 held item (attacker’s choice). Object is thrown 1d6 squares in a random direction.<br>Save: DC 30 Dexterity negates; deals bonus damage instead.<br>Recover: Picking up a dropped object is a move equivalent action that provokes attacks of opportunity from threatening opponents.",
+    "I See Stars<br>Target suffers maximum damage plus bonus damage again and a 30% miss chance for 1d4 rounds.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check negates the miss chance.",
+    "Knockback<br>Target suffers maximum damage plus bonus damage again and is pushed 1d6 squares directly away.<br>Save: DC 30 Strength negates; deals additional bonus damage instead.",
+    "Lights Out<br>Target suffers maximum damage plus bonus damage again and is blinded for 1d2 rounds.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check removes the blinded condition.",
+    "Low Blow<br>Target suffers maximum damage plus bonus damage again and is nauseated for 1d2 rounds.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check negates the sickened condition.",
+    "Mace to Da Face<br>Target suffers maximum damage plus bonus damage again and is dazed and blinded for 1 round.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check removes the dazed condition.",
+    "Momentum<br>You deal maximum damage plus bonus damage again and gain a +3 circumstance bonus on all your attack rolls until the end of your next turn.",
+    "My Teef!<br>Target suffers maximum damage plus bonus damage again and 1 Con damage. Target’s bite attacks are at a -3 penalty, and target suffers a 30% spell failure chance (-6 to casting rolls) for verbal spells.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check repairs teeth, removing bite penalty and removing the spell failure chance.",
+    "Nighty Night<br>Target suffers maximum damage plus bonus damage again, falls prone, and is unconscious for 1d3 rounds.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check allows the target to regain consciousness.<br>Recover: A move equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
+    "Numbing Blow<br>Target suffers maximum damage plus bonus damage again, 1d3 Dex damage, and target is disarmed of 1 item (attacker’s choice). Object is dropped in thrown 1d6 squares in a random direction.<br>Save: DC 30 Dexterity negates; deals bonus damage instead.<br>Heal: Rest and restorative magic can heal the ability damage.<br>Recover: Picking up an item is a move-equivalent action that provokes attacks of opportunity from threatening opponents.",
+    "Off Balance<br>Target suffers maximum damage plus bonus damage again, becomes flat-footed until the beginning of their next turn, and provokes attacks of opportunity from all threatening opponents.<br>Save: DC 30 Dexterity negates; deals bonus damage instead.",
+    "Pimp Slap<br>Target suffers maximum damage plus bonus damage again and target is dazed for 1d3 rounds.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check negates the dazed condition.",
+    "Rattled<br>Target suffers maximum damage plus bonus damage again and is confused for 1d2 rounds.<br>Save: DC 30 Resolve negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check ends the confused condition.",
+    "Roundhouse<br>Target suffers maximum damage plus bonus damage again and you gain a free attack against all threatened foe adjacent to the original target at a -2 penalty. If no additional target exists, deal bonus damage again to the original target.",
+    "Ruptured Organ<br>Target suffers maximum damage plus bonus damage again and 2d6 bleed. This bleed can only be cured with magic.<br>Save: DC 30 Constitution negates bleed; deals bonus damage instead.<br>Heal: A DC 30 Heal check halves the bleed effect.",
+    "Shattered Hand<br>Target suffers maximum damage plus bonus damage again and 1d2 Con and Str damage. All attacks and skill checks using that hand suffer a -2 penalty.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check removes penalties, but rest or restorative magic is needed to heal ability damage.",
+    "Shattered Nose<br>Target suffers maximum damage plus bonus damage again, 1d4 Cha damage, and 2d4 bleed.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check heals the bleed effect, but rest or restorative magic is needed to heal ability damage.",
+    "Shield Smack<br>Target suffers maximum damage plus bonus damage again and target’s shield or off-hand weapon is disarmed landing in the targets square.<br>Save: A DC 30 Dexterity save negates; deals bonus damage instead.<br>Special: If target is not using a shield, deals additional bonus damage instead.<br>Recover: Picking up an item is a move-equivalent action that provokes attacks of opportunity from threatening opponents.",
+    "Skull Crush<br>Target’s skull is crushed and immediately dies.<br>Save: DC 30 Constitution negates death; deals maximum damage plus 2d4 Int drain instead.<br>Heal: Rest or restoration magic.",
+    "Solid Blow<br>You deal maximum damage plus triple bonus damage again.<br>Save: None",
+    "Split Open<br>Target suffers maximum damage plus bonus damage again and 2d6 bleed.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 15 Heal check halves the bleed effect, while a DC 30 Heal check ends it.",
+    "Spun Around<br>Target suffers maximum damage plus bonus damage again and is flat-footed for 1d4 rounds.<br>Save: A DC 30 Dexterity negates; deals bonus damage instead.",
+    "Staggering Blow<br>Target suffers maximum damage plus double bonus damage again. And suffers an equal amount of nonlethal damage.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: Nonlethal damage heals naturally at a rate of 1 point per hour.",
+    "Surprise Opening<br>Target suffers maximum damage plus bonus damage again and you may make one additional free attack against the target at no penalty.",
+    "Terrible Bruise<br>Target suffers maximum damage plus bonus damage again, 1 Con damage, and 2d6 nonlethal damage.<br>Save: A DC 30 Constitution partially negates; deals maximum damage plus 2d6 nonlethal damage instead.<br>Heal: Nonlethal damage heals naturally at a rate of 1 point per hour. Rest or restorative magic is needed to restore ability damage.",
+    "Thunder Strike<br>Target suffers maximum damage plus bonus damage again and is deafened for 1d4 rounds.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check removes the deafened condition.",
+    "Tiring Blow<br>Target suffers maximum damage plus bonus damage again and becomes Exhausted.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Heal: Long Rest.",
+    "To Your Thinky Bits<br>Target suffers maximum damage plus bonus damage again and 1 Int bleed.<br>Save: Constitution 30 negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check will end the Int bleed. Rest or restorative magic is needed to restore ability damage.",
+    "What’s Going On?<br>Target suffers maximum plus bonus damage again and 1d8 hours of target’s memory is erased.<br>Save: DC 30 Constitution save negates; deals additional bonus damage instead.<br>Heal: A DC 30 Heal check restores target’s memory (no retry).",
+    "Where Am I?<br>Target suffers maximum damage plus bonus damage again and is stunned for 1d2 rounds.<br>Save: DC 30 Constitution negates; deals bonus damage instead."    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = s_bludgeoning[randomNumber];
-    // $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = s_bludgeoning[randomNumber];
+    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = s_bludgeoning[i];
-      $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = s_bludgeoning[i];
+    //   $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
@@ -1047,14 +1048,14 @@ $(document).ready(function() {
     "Wild Surge<br>Maximize all spell variables and you gain a +9 critical range and critical fumble range for all spells you cast until the end of your next turn. (Critical Threat 11-20, Critical Fumble 1-10<br>Save: If the spell targeted an opponent DC 30 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead."    
     ];
 
-    // const randomNumber = getRandomInt(50);
-    // const title = s_magic[randomNumber];
-    // $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
+    const randomNumber = getRandomInt(50);
+    const title = s_magic[randomNumber];
+    $("#text").prepend("<p class=\"red\">" + (randomNumber + 1) + ": " + title + "</p>");
 
-    for (let i = 0; i < 50; i++) {
-      let title = s_magic[i];
-      $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
-    }
+    // for (let i = 0; i < 50; i++) {
+    //   let title = s_magic[i];
+    //   $("#text").prepend("<p class=\"red\">" + (i + 1) + ": " + title + "</p>");
+    // }
 
     $("#text").show();
   });
