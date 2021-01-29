@@ -181,7 +181,7 @@ li {
   background-color: rgb(202, 166, 115);
   padding: 50px;
 
-  position: fixed;
+  position: absolute;
   width: 600px;
   top: 30%;
   left: 50%;
