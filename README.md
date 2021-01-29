@@ -35,6 +35,7 @@ _Choose your preferred way to Install:_
 
 _When a player rolls a critical hit, and confirms the hit, the Dungeon Master simply needs to click on the button denoting whether the hit was a Minor, Major, or Severe hit. Our system has 20-29 as a Minor hit, 30-39 as a Major hit, and 40+ constitutes a Severe hit. Then, choose the damage type (slashing, piercing, bludgeoning, or magical)._
 _If the player rolls a fumble, the DM chooses which type of damage they fumbled on, and clicks the button._
+_The site will keep track of the user's clicked effects, and all clicked effects will be displayed in a log at the bottom of the page._
 
 ## Known Bugs
 
@@ -42,7 +43,7 @@ _(Low Priority) Button shadows render improperly on mobile._
 
 ## Planned Implementations
 
-* _Pop-up window displaying the currently rolled effect (change requested by Forest)_
+_All planned features currently added!_
 
 ## Support and contact details
 
