@@ -144,14 +144,25 @@ li {
 }
 
 .table-header-title {
+  color: white;
+  font-size: 28px;
   text-align: center;
   font-family: 'moriaregular';
-  font-size: 28px;
   font-weight: bold;
-  color: white;
-  background-color: black;
-  border: 5px solid  white;
-  border-radius: 25px;
+  margin-top: 5px;
+  background-color: brown;
+  border: 5px solid goldenrod;
+  border-style: ridge groove groove ridge;
+  background-image: url("../img/wood.jpg");
+  text-shadow: 2px 2px 8px #FF0000,
+  1px 0px 1px black,
+  0px 1px 1px black,
+  -1px 0px 1px black,
+  0px -1px 1px black,
+  2px 0px 1px black,
+  0px 2px 1px black,
+  -2px 0px 1px black,
+  0px -2px 1px black;
 }
 
 .button-header {
