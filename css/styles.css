@@ -152,6 +152,7 @@ li {
   background-color: black;
   border: 5px solid  white;
   border-radius: 25px;
+  margin-top: 5px;
 }
 
 .button-header {
