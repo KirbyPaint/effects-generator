@@ -1,8 +1,8 @@
-#text {
+.text {
   display: none;
 }
 
-#text p {
+.text p {
   padding: 20px;
   margin: 50px;
   /* offset-x | offset-y | blur-radius | spread-radius | color R, G, B, opacity */
@@ -172,4 +172,30 @@ li {
 
 .center {
   text-align: center;
+}
+
+/* New stuff */
+.popup {
+  font-size: 20px;
+  background-color: rgb(202, 166, 115);
+  padding: 50px;
+
+  position: fixed;
+  width: 600px;
+  top: 30%;
+  left: 50%;
+  margin-left: -300px;
+
+  border: 10px solid rgb(165, 91, 42);
+  border-radius: 50px;
+  border-style: ridge groove groove ridge;
+  box-shadow: 15px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#popup-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding-left: 15px;
 }

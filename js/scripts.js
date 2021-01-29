@@ -18,6 +18,11 @@ function getTime() {
 }
 
 $(document).ready(function() {
+  $("button#popup-button").click(function() {
+    $(".popup").slideUp();
+    $(".popup-text").empty();
+  });
+
   // Buttons and their functions
   $("button#btnG_Melee").click(function() {
     // Fumble/Melee Table
@@ -75,14 +80,17 @@ $(document).ready(function() {
     
     const randomNumber = getRandomInt(50);
     const title = g_melee[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-melee.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-melee.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = g_melee[i];
-    //   $("#text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-melee.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-melee.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnG_Ranged").click(function() {
@@ -141,14 +149,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = g_ranged[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-ranged.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-ranged.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = g_ranged[i];
-    //   $("#text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-ranged.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-ranged.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnG_Natural").click(function() {
@@ -207,14 +218,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = g_natural[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-natural.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-natural.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = g_natural[i];
-    //   $("#text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-natural.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-natural.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnG_Magic").click(function() {
@@ -273,14 +287,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = g_magic[randomNumber];
-    $("#text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = g_magic[i];
-    //   $("#text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"gray\">" + getTime() + "<br>" + "<img src=\"img\\G-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnB_Slashing").click(function() {
@@ -339,14 +356,17 @@ $(document).ready(function() {
     
     const randomNumber = getRandomInt(50);
     const title = b_slashing[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
     
     // for (let i = 0; i < 50; i++) {
     //   let title = b_slashing[i];
-    //   $("#text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnB_Piercing").click(function() {
@@ -405,14 +425,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = b_piercing[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_piercing[i];
-    //   $("#text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnB_Bludgeoning").click(function() {
@@ -471,14 +494,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = b_bludgeoning[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnB_Magic").click(function() {
@@ -537,14 +563,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = b_magic[randomNumber];
-    $("#text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_magic[i];
-    //   $("#text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"green\">" + getTime() + "<br>" + "<img src=\"img\\B-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnM_Slashing").click(function() {
@@ -603,14 +632,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_slashing[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = m_slashing[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnM_Piercing").click(function() {
@@ -669,14 +701,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_piercing[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = m_piercing[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnM_Bludgeoning").click(function() {
@@ -735,14 +770,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_bludgeoning[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = m_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnM_Magic").click(function() {
@@ -801,14 +839,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_magic[randomNumber];
-    $("#text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = m_magic[i];
-    //   $("#text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"yellow\">" + getTime() + "<br>" + "<img src=\"img\\M-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnS_Slashing").click(function() {
@@ -867,14 +908,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_slashing[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = s_slashing[i];
-    //   $("#text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnS_Piercing").click(function() {
@@ -933,14 +977,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_piercing[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = s_piercing[i];
-    //   $("#text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnS_Bludgeoning").click(function() {
@@ -999,14 +1046,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_bludgeoning[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = s_bludgeoning[i];
-    //   $("#text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("button#btnS_Magic").click(function() {
@@ -1065,14 +1115,17 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_magic[randomNumber];
-    $("#text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".popup-text").empty();
+    $(".popup-text").append("<p>" + title + "</p>");
 
     // for (let i = 0; i < 50; i++) {
     //   let title = s_magic[i];
-    //   $("#text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"red\">" + getTime() + "<br>" + "<img src=\"img\\S-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
-    $("#text").show();
+    $(".popup").slideDown();
+    $(".text").show();
   });
 
   $("form#form").submit(function(event) {
