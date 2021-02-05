@@ -24,7 +24,7 @@ $(document).ready(function() {
   });
 
   // Buttons and their functions
-  $("button#btnG_Melee").click(function() {
+  $("button#g_melee").click(function() {
     // Fumble/Melee Table
     const g_melee = ["All or Nothing<br>Your attack fails and you suffer a -1 penalty on attack rolls until you score a critical hit.<br>Save: Resolve DC 20 negates.<br>Recover: You must succeed at a Resolve save or score a critical hit to end this affect. You may reroll the save each round.<br>Special: Each attack you miss your target increases the penalty by -1.",
     "Armor Smash<br>Your attack hits and deals damage to your armor instead of your target.<br>Save: Dexterity DC 20 negates.<br>Recover: A Craft DC 20 check is needed to repair the damage.<br>Special: If you do not wear armor, damage is dealt to shield or to yourself instead.",
@@ -80,20 +80,21 @@ $(document).ready(function() {
     
     const randomNumber = getRandomInt(50);
     const title = g_melee[randomNumber];
-    $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\G-melee.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    //$(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\G-melee.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_melee.png" class="time"><br>${(randomNumber + 1)}: ${title}</p>`);
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = g_melee[i];
-    //   $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\G-melee.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\g_melee.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnG_Ranged").click(function() {
+  $("button#g_ranged").click(function() {
     // FUMBLE/RANGED Table
     const g_ranged = ["Aching Back<br>Your attack fails and you become fatigued.<br>Save: Constitution DC 20 negates.<br>Recover: Heal check DC 20 or rest for 8 hours.<br>Special: If wearing heavy armor or wielding a heavy crossbow, you suffer disadvantage to your save.",
     "Aim Carefully Next Time<br>Your attack fails and for the next 3 rounds, you suffer disadvantage on all ranged attack made without the Aim action.<br>Save: Resolve DC 20 negates.<br>Recover: You may take a greater action to clear your head and make a successful DC 20 Perception check to end the penalty.",
@@ -149,20 +150,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = g_ranged[randomNumber];
-    $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\G-ranged.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\g_ranged.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = g_ranged[i];
-    //   $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\G-ranged.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\g_ranged.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnG_Natural").click(function() {
+  $("button#g_natural").click(function() {
     // FUMBLE/NATURAL Table
     const g_natural = ["Awkward Attack<br>Your attack fails and you suffer a -2 penalty to Defense rolls for 1d4 rounds.<br>Save: Dexterity DC 20 negates.<br>Heal: A DC 20 Acrobatics check removes the attack penalties.",
     "Bad Headbutt<br>Your attack fails and you are stunned for 1 round.<br>Save: Constitution DC 20 negates.",
@@ -218,20 +219,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = g_natural[randomNumber];
-    $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\G-natural.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\g_natural.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = g_natural[i];
-    //   $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\G-natural.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\g_natural.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnG_Magic").click(function() {
+  $("button#g_magic").click(function() {
     // FUMBLE/MAGIC Table
     const g_magic = ["Cursed<br>Your spell fails and you suffer a -4 penalty on attack rolls, saves, skill checks, and ability checks. <br>Save: Resolve DC 20 negates.<br>Heal: This effect can only be cured with remove curse.",
     "Weak-Minded Fool<br>Your spell fails and you suffer 1 point of Wis bleed damage.<br>Save: Resolve DC 20 negates.<br>Special: The type of magic determines what type of skill check is needed to heal this effect. Arcana for Arcane, Religion for Divine, and Nature for Primal magic.<br>Heal: A DC 20 Skill check ends the ability bleed, but rest or restorative magic is needed to heal ability damage.",
@@ -287,20 +288,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = g_magic[randomNumber];
-    $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\G-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\g_magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = g_magic[i];
-    //   $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\G-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"fumble\">" + getTime() + "<br>" + "<img src=\"img\\g_magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnB_Slashing").click(function() {
+  $("button#b_slashing").click(function() {
     // MINOR/SLASHING Table
     const b_slashing = ["Across the Eyes<br>Target suffers maximum damage and is blinded for 1d4 minutes.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 10 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%).<br>A DC 20 heal check will fully repair eyesight to normal levels.",
     "Armor Damage<br>Target suffers maximum damage and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
@@ -356,20 +357,20 @@ $(document).ready(function() {
     
     const randomNumber = getRandomInt(50);
     const title = b_slashing[randomNumber];
-    $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\B-slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\b_slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
     
     // for (let i = 0; i < 50; i++) {
     //   let title = b_slashing[i];
-    //   $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\B-slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\b_slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnB_Piercing").click(function() {
+  $("button#b_piercing").click(function() {
     // MINOR/PIERCING Table
     const b_piercing = ["Achilles’ Heel<br>Target suffers maximum damage and 1d2 Dex damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the movement penalty.",
     "Bicep Wound<br>Target suffers maximum plus bonus damage again and 1d2 Str damage.<br>Save: A DC 20 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
@@ -425,20 +426,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = b_piercing[randomNumber];
-    $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\B-piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\b_piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_piercing[i];
-    //   $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\B-piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\b_piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnB_Bludgeoning").click(function() {
+  $("button#b_bludgeoning").click(function() {
     // MINOR/BLUDGEONING TABLE
     const b_bludgeoning = ["2 For 1<br>Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.",
     "And Stay Down!<br>Target suffers maximum damage and is knocked prone.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
@@ -494,20 +495,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = b_bludgeoning[randomNumber];
-    $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\B-bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\b_bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_bludgeoning[i];
-    //   $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\B-bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\b_bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnB_Magic").click(function() {
+  $("button#b_magic").click(function() {
     // MINOR/MAGIC Table
     const b_magic = ["Allergic Reaction<br>Maximize all spell variables and target opponent within the spells range suffers 1d2 damage to a random ability score.<br>Save: A DC 20 Constitution negates ability damage. If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha",
     "Arcane Blast<br>Maximize all spell variables and target opponent within the spells range suffers bonus damage again. This is a force effect.<br>Save: A DC 20 Dexterity save negates the arcane blast. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
@@ -563,20 +564,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = b_magic[randomNumber];
-    $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\B-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\b_magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = b_magic[i];
-    //   $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\B-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"minor\">" + getTime() + "<br>" + "<img src=\"img\\b_magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnM_Slashing").click(function() {
+  $("button#m_slashing").click(function() {
     // MAJOR/SLASHING TABLE
     const m_slashing = ["Across the Eyes<br>Target suffers maximum damage and is blinded for 1d4 minutes.<br>Save: A DC 25 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 15 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%). A DC 25 heal check will fully repair eyesight to normal levels.",
     "Armor Damage<br>Target suffers maximum damage plus bonus damage again and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 25 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
@@ -632,20 +633,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_slashing[randomNumber];
-    $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\M-slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\m_slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = m_slashing[i];
-    //   $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\M-slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\m_slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnM_Piercing").click(function() {
+  $("button#m_piercing").click(function() {
     // MAJOR/PIERCING Table
     const m_piercing = ["Achilles’ Heel<br>Target suffers maximum damage and 1d3 Dex damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check ends the movement penalty.",
     "Bicep Wound<br>Target suffers maximum plus bonus damage again and 1d3 Str damage.<br>Save: A DC 25 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
@@ -701,20 +702,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_piercing[randomNumber];
-    $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\M-piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\m_piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = m_piercing[i];
-    //   $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\M-piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\m_piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnM_Bludgeoning").click(function() {
+  $("button#m_bludgeoning").click(function() {
     // MAJOR/BLUDGEONING Table
     const m_bludgeoning = ["2 For 1<br>Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 25 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.",
     "And Stay Down!<br>Target suffers maximum damage and is knocked prone.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
@@ -770,20 +771,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_bludgeoning[randomNumber];
-    $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\M-bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\m_bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = m_bludgeoning[i];
-    //   $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\M-bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\m_bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnM_Magic").click(function() {
+  $("button#m_magic").click(function() {
     // MAJOR/MAGIC Table
     const m_magic = ["Allergic Reaction<br>Maximize all spell variables and target opponent within the spells range suffers 1d4 damage to a random ability score.<br>Save: A DC 25 Constitution negates ability damage. If the spell targeted an opponent, DC 25 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha",
     "Arcane Blast<br>Maximize all spell variables and target opponent within the spells range suffers double bonus damage again. This is a force effect.<br>Save: A DC 25 Dexterity save negates the arcane blast. If the spell targeted an opponent, a DC 25 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
@@ -839,20 +840,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = m_magic[randomNumber];
-    $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\M-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\m_magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = m_magic[i];
-    //   $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\M-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"major\">" + getTime() + "<br>" + "<img src=\"img\\m_magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnS_Slashing").click(function() {
+  $("button#s_slashing").click(function() {
     // SEVERE/SLASHING Table
     const s_slashing = ["Across the Eyes<br>Target suffers maximum damage and is blinded permanently.<br>Save: A DC 30 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 20 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%). A DC 30 heal check will fully repair eyesight to normal levels.",
     "Armor Damage<br>Target suffers maximum damage plus double bonus damage again and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 30 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
@@ -908,20 +909,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_slashing[randomNumber];
-    $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\S-slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\s_slashing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = s_slashing[i];
-    //   $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\S-slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\s_slashing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnS_Piercing").click(function() {
+  $("button#s_piercing").click(function() {
     // SEVERE/PIERCING Table
     const s_piercing = ["Achilles’ Heel<br>Target suffers maximum damage plus bonus damage again and 1d4 Dex damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check ends the movement penalty.",
     "Bicep Wound<br>Target suffers maximum plus bonus damage again and 1d4 Str damage.<br>Save: A DC 25 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
@@ -977,20 +978,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_piercing[randomNumber];
-    $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\S-piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\s_piercing.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = s_piercing[i];
-    //   $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\S-piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\s_piercing.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnS_Bludgeoning").click(function() {
+  $("button#s_bludgeoning").click(function() {
     // SEVERE/BLUDGEONING Table
     const s_bludgeoning = ["2 For 1<br>Target suffers maximum damage plus bonus damage again and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 30 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage again to original target.",
     "And Stay Down!<br>Target suffers maximum damage plus bonus damage again and is knocked prone and unconscious for 1 round.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
@@ -1046,20 +1047,20 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_bludgeoning[randomNumber];
-    $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\S-bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\s_bludgeoning.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = s_bludgeoning[i];
-    //   $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\S-bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\s_bludgeoning.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
     $(".text").show();
   });
 
-  $("button#btnS_Magic").click(function() {
+  $("button#s_magic").click(function() {
     // SEVERE/MAGIC Table
     const s_magic = ["Allergic Reaction<br>Maximize all spell variables and target opponent within the spells range suffers 1d6 damage to a random ability score.<br>Save: A DC 30 Constitution negates ability damage. If the spell targeted an opponent, DC 30 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha",
     "Arcane Blast<br>Maximize all spell variables and target opponent within the spells range suffers triple bonus damage again. This is a force effect.<br>Save: A DC 30 Dexterity save negates the arcane blast. If the spell targeted an opponent, a DC 30 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
@@ -1115,13 +1116,13 @@ $(document).ready(function() {
 
     const randomNumber = getRandomInt(50);
     const title = s_magic[randomNumber];
-    $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\S-magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
+    $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\s_magic.png\" class=\"time\">" + "<br>" + (randomNumber + 1) + ": " + title + "</p>");
     $(".popup-text").empty();
-    $(".popup-text").append("<p>" + title + "</p>");
+    $(".popup-text").append(`<p>${title}</p>`);
 
     // for (let i = 0; i < 50; i++) {
     //   let title = s_magic[i];
-    //   $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\S-magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
+    //   $(".text").prepend("<p class=\"severe\">" + getTime() + "<br>" + "<img src=\"img\\s_magic.png\" class=\"time\">" + "<br>" + (i + 1) + ": " + title + "</p>");
     // }
 
     $(".popup").slideDown();
