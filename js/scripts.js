@@ -17,6 +17,13 @@ function getTime() {
   // return "<span class=\"time\">" + timeSlice + "</span>";  // 24 hr time
 }
 
+function popupText(title, text) {
+  $(".popup-text").empty();
+  $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
+  $(".popup").slideDown();
+  $(".text").show();
+}
+
 $(document).ready(function() {
   $("button#popup-button").click(function() {
     $(".popup").slideUp();
@@ -141,11 +148,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_melee.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -266,11 +270,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_ranged.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -391,11 +392,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_natural.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -516,11 +514,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_magic.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -641,11 +636,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_slashing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -766,11 +758,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_piercing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -891,11 +880,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_bludgeoning.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -1016,11 +1002,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_magic.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -1141,11 +1124,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_slashing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -1266,11 +1246,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_piercing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -1391,11 +1368,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_bludgeoning.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -1516,11 +1490,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_magic.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -1641,11 +1612,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_slashing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -1766,11 +1734,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_piercing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -1891,11 +1856,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_bludgeoning.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
@@ -2016,11 +1978,8 @@ $(document).ready(function() {
     //   $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_magic.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
     // }
 
-    if ($("#popup-check").prop("checked") == true) {
-      $(".popup-text").empty();
-      $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
-      $(".popup").slideDown();
-      $(".text").show();
+    if ($("#popup-check").prop("checked")) {
+      popupText(title, text);
     }
   });
 
