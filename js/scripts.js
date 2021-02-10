@@ -6,7 +6,6 @@ function getTime() {
   let time = new Date().getTime();
   let date = new Date(time);
   const dateArray = date.toString();
-  // const timeSlice = dateArray.slice(16, 24);
   let hourSlice = dateArray.slice(16, 18);
   const minsecSlice = dateArray.slice(18, 24);
   if (parseInt(hourSlice.toString()) > 12) {
@@ -17,11 +16,28 @@ function getTime() {
   // return "<span class=\"time\">" + timeSlice + "</span>";  // 24 hr time
 }
 
-function popupText(title, text) {
+function effect(title, text, charClass, randomNumber, difficulty) {
+  const image = `"img\\`+`${difficulty}_${charClass}.png"`;
+  $(".text").prepend(`<p class="${difficulty}">${getTime()}<br><img src=${image} class="time"><br>${(randomNumber + 1)}: <em>${title[randomNumber]}</em><br>${text[randomNumber]}</p>`);
+}
+
+function popupText(title, text, randomNumber) {
   $(".popup-text").empty();
-  $(".popup-text").append(`<span class="popup-title-text">${title}</span><p>${text}</p>`);
+  $(".popup-text").append(`<span class="popup-title-text">${title[randomNumber]}</span><p>${text[randomNumber]}</p>`);
   $(".popup").slideDown();
   $(".text").show();
+}
+
+function clearPage() {
+  $(".text").empty();
+}
+
+function debug(title, text, charClass, difficulty) {
+  clearPage();
+  const image = `"img\\`+`${difficulty}_${charClass}.png"`;
+  for (let i = 0; i < 50; i++) {
+    $(".text").append(`<p class="${difficulty}">${getTime()}<br><img src=${image} class="time"><br>${(i + 1)}: <em>${title[i]}</em><br>${text[i]}</p>`);
+  }
 }
 
 $(document).ready(function() {
@@ -85,7 +101,7 @@ $(document).ready(function() {
     "How In The World?"    
     ];
 
-    const g_melee = ["Your attack fails and you suffer a -1 penalty on attack rolls until you score a critical hit.<br>Save: Resolve DC 20 negates.<br>Recover: You must succeed at a Resolve save or score a critical hit to end this affect. You may reroll the save each round.<br>Special: Each attack you miss your target increases the penalty by -1.",
+    const textArray = ["Your attack fails and you suffer a -1 penalty on attack rolls until you score a critical hit.<br>Save: Resolve DC 20 negates.<br>Recover: You must succeed at a Resolve save or score a critical hit to end this affect. You may reroll the save each round.<br>Special: Each attack you miss your target increases the penalty by -1.",
     "Your attack hits and deals damage to your armor instead of your target.<br>Save: Dexterity DC 20 negates.<br>Recover: A Craft DC 20 check is needed to repair the damage.<br>Special: If you do not wear armor, damage is dealt to shield or to yourself instead.",
     "Your attack fails and all of your enemies are considered to have concealment from you (20% miss chance) for 1d4 rounds.<br>Save: Resolve DC 20 negates.<br>Recover: You may continue to make a Resolve save each round you are affected to end the duration.",
     "Your attack fails and you take a -2 penalty to Defense rolls for 1d4 rounds.<br>Save: Dexterity DC 20 negates.<br>Recover: You must expend a greater action to recover.<br>Special: If using a two-handed weapon, add +1 round to the duration of the penalty.",
@@ -138,18 +154,16 @@ $(document).ready(function() {
     ];
     
     const randomNumber = getRandomInt(50);
-    const text = g_melee[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_melee.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
+    const charClass = "melee";
+    const difficulty = "fumble";
     
-    // for (let i = 0; i < 50; i++) {
-    //   let text = g_melee[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_melee.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -207,7 +221,7 @@ $(document).ready(function() {
     "How In The World?"    
     ];
 
-    const g_ranged = ["Your attack fails and you become fatigued.<br>Save: Constitution DC 20 negates.<br>Recover: Heal check DC 20 or rest for 8 hours.<br>Special: If wearing heavy armor or wielding a heavy crossbow, you suffer disadvantage to your save.",
+    const textArray = ["Your attack fails and you become fatigued.<br>Save: Constitution DC 20 negates.<br>Recover: Heal check DC 20 or rest for 8 hours.<br>Special: If wearing heavy armor or wielding a heavy crossbow, you suffer disadvantage to your save.",
     "Your attack fails and for the next 3 rounds, you suffer disadvantage on all ranged attack made without the Aim action.<br>Save: Resolve DC 20 negates.<br>Recover: You may take a greater action to clear your head and make a successful DC 20 Perception check to end the penalty.",
     "Your attack fails and you lose your Dex bonus on attack rolls for 3 rounds.<br>Save: Dexterity DC 20 negates.<br>Recover: You must expend a greater action and make a successful DC 20 Acrobatics skill check to regain your Dex bonus.",
     "Your attack fails and you are stunned until the end of your next turn.<br>Save: Resolve DC 20 negates.",
@@ -260,18 +274,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = g_ranged[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_ranged.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = g_ranged[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_ranged.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "ranged";
+    const difficulty = "fumble";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -329,7 +341,7 @@ $(document).ready(function() {
     "How In The World?"    
     ];
 
-    const g_natural = ["Your attack fails and you suffer a -2 penalty to Defense rolls for 1d4 rounds.<br>Save: Dexterity DC 20 negates.<br>Heal: A DC 20 Acrobatics check removes the attack penalties.",
+    const textArray = ["Your attack fails and you suffer a -2 penalty to Defense rolls for 1d4 rounds.<br>Save: Dexterity DC 20 negates.<br>Heal: A DC 20 Acrobatics check removes the attack penalties.",
     "Your attack fails and you are stunned for 1 round.<br>Save: Constitution DC 20 negates.",
     "Your attack fails and you suffer a -2 penalty on saves and skill checks for 1d4 hours.<br>Save: Constitution DC 20 negates.<br>Heal: A DC 20 Heal check removes the penalties.",
     "Your attack fails and you take 1d6 points of bleed damage.<br>Save: Constitution DC 20 negates.<br>Heal: A DC 20 Heal check ends the bleed effect.",
@@ -382,18 +394,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = g_natural[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_natural.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = g_natural[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_natural.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "natural";
+    const difficulty = "fumble";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -451,7 +461,7 @@ $(document).ready(function() {
     "Wild Magic"    
     ];
 
-    const g_magic = ["Your spell fails and you suffer a -4 penalty on attack rolls, saves, skill checks, and ability checks. <br>Save: Resolve DC 20 negates.<br>Heal: This effect can only be cured with remove curse.",
+    const textArray = ["Your spell fails and you suffer a -4 penalty on attack rolls, saves, skill checks, and ability checks. <br>Save: Resolve DC 20 negates.<br>Heal: This effect can only be cured with remove curse.",
     "Your spell fails and you suffer 1 point of Wis bleed damage.<br>Save: Resolve DC 20 negates.<br>Special: The type of magic determines what type of skill check is needed to heal this effect. Arcana for Arcane, Religion for Divine, and Nature for Primal magic.<br>Heal: A DC 20 Skill check ends the ability bleed, but rest or restorative magic is needed to heal ability damage.",
     "Your spell fails and the highest level spell effect on you is transferred to your target for the remainder of its duration.<br>Save: Charisma DC 20 negates.<br>Special: If you have no spell effect on you, you suffer bonus damage instead.",
     "Your spell fails and you suffer Disadvantage on all spell casting rolls until the end of your next turn.<br>Save: Intelligence DC 20 negates.",
@@ -504,18 +514,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = g_magic[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_magic.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = g_magic[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="fumble">${getTime()}<br><img src="img\\g_magic.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "magic";
+    const difficulty = "fumble";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -573,7 +581,7 @@ $(document).ready(function() {
     "How In The World?"    
     ];
 
-    const b_slashing = ["Target suffers maximum damage and is blinded for 1d4 minutes.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 10 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%).<br>A DC 20 heal check will fully repair eyesight to normal levels.",
+    const textArray = ["Target suffers maximum damage and is blinded for 1d4 minutes.<br>Save: A DC 20 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 10 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%).<br>A DC 20 heal check will fully repair eyesight to normal levels.",
     "Target suffers maximum damage and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
     "Target suffers maximum damage and is disarmed (1 item).<br>Save: A DC 20 Dexterity negates the disarm; deals bonus damage instead.<br>Recover: Target must expend a move-equivalent action to retrieve its item. This provokes attacks of opportunity from all threatening opponents. <br>Special: If target is not holding any items, deal additional bonus damage instead.",
     "Target suffers maximum damage and 1 Cha damage. Target also suffers a -2 penalty on Perception checks until healed.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.<br>Heal: A DC 10 Heal check halves the Perception check penalties, while a DC 20 removes them. Rest or restorative magic is required to heal ability damage.",
@@ -626,18 +634,16 @@ $(document).ready(function() {
     ];
     
     const randomNumber = getRandomInt(50);
-    const text = b_slashing[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_slashing.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = b_slashing[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_slashing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "slashing";
+    const difficulty = "minor";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -695,7 +701,7 @@ $(document).ready(function() {
     "Vulnerable Spot"      
     ];
 
-    const b_piercing = ["Target suffers maximum damage and 1d2 Dex damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the movement penalty.",
+    const textArray = ["Target suffers maximum damage and 1d2 Dex damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the movement penalty.",
     "Target suffers maximum plus bonus damage again and 1d2 Str damage.<br>Save: A DC 20 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
     "Target suffers maximum damage and 1d6 bleed.<br>Save: A DC 20 Constitution negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check ends the bleed condition.",
     "Target suffers maximum damage and is knocked prone.<br>Save: A DC 20 Dexterity negates; deals bonus damage instead.<br>Recover: Standing from prone is a move-equivalent action that provokes attacks of opportunity from threatening foes.",
@@ -748,18 +754,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = b_piercing[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_piercing.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = b_piercing[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_piercing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "piercing";
+    const difficulty = "minor";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -817,7 +821,7 @@ $(document).ready(function() {
     "Where Am I?",    
     ];
     
-    const b_bludgeoning = ["Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.",
+    const textArray = ["Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.",
     "Target suffers maximum damage and is knocked prone.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
     "Target suffers maximum damage and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
     "Target suffers maximum plus bonus damage and 1d4 Dex damage.<br>Save: DC 20 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
@@ -870,18 +874,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = b_bludgeoning[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_bludgeoning.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = b_bludgeoning[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_bludgeoning.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "bludgeoning";
+    const difficulty = "minor";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -939,7 +941,7 @@ $(document).ready(function() {
     "Wild Surge"    
     ];
 
-    const b_magic = ["Maximize all spell variables and target opponent within the spells range suffers 1d2 damage to a random ability score.<br>Save: A DC 20 Constitution negates ability damage. If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha",
+    const textArray = ["Maximize all spell variables and target opponent within the spells range suffers 1d2 damage to a random ability score.<br>Save: A DC 20 Constitution negates ability damage. If the spell targeted an opponent, DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha",
     "Maximize all spell variables and target opponent within the spells range suffers bonus damage again. This is a force effect.<br>Save: A DC 20 Dexterity save negates the arcane blast. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
     "Maximize all spell variables and target opponent within the spells range glows as the spell faerie fire for 1d4 rounds. <br>Save: A DC 20 Resolve save negates the faerie fire. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
     "Maximize all spell variables and one target square within the spells range is covered in arcane goo. Any creature in that square or who enters that square becomes entangled as the web spell.<br>Save: A DC 20 Dexterity check negates the entangled. If the spell targeted an opponent, a DC 20 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Recovery: A DC 20 Strength or Dexterity check allows you to escape the arcane goo entanglement. An opponent may make an attempt to escape at the beginning of their turn each round.",
@@ -992,18 +994,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = b_magic[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_magic.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = b_magic[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="minor">${getTime()}<br><img src="img\\b_magic.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "magic";
+    const difficulty = "minor";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -1061,7 +1061,7 @@ $(document).ready(function() {
     "Wide Open"    
     ];
 
-    const m_slashing = ["Target suffers maximum damage and is blinded for 1d4 minutes.<br>Save: A DC 25 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 15 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%). A DC 25 heal check will fully repair eyesight to normal levels.",
+    const textArray = ["Target suffers maximum damage and is blinded for 1d4 minutes.<br>Save: A DC 25 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 15 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%). A DC 25 heal check will fully repair eyesight to normal levels.",
     "Target suffers maximum damage plus bonus damage again and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 25 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
     "Target suffers maximum damage and is disarmed (1 item).<br>Save: A DC 25 Dexterity negates the disarm; deals bonus damage instead.<br>Recover: Target must expend a move-equivalent action to retrieve its item. This provokes attacks of opportunity from all threatening opponents. <br>Special: If target is not holding any items, deal additional bonus damage instead.",
     "Target suffers maximum damage and 1 Cha drain. Target also suffers a -4 penalty on Perception checks until healed.<br>Save: A DC 25 Dexterity negates; deals bonus damage instead.<br>Heal: A DC 15 Heal check halves the Perception check penalties, while a DC 25 removes them. Restorative magic is required to heal ability drain.",
@@ -1114,18 +1114,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = m_slashing[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_slashing.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = m_slashing[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_slashing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "slashing";
+    const difficulty = "major";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -1183,7 +1181,7 @@ $(document).ready(function() {
     "Vulnerable Spot"    
     ];
 
-    const m_piercing = ["Target suffers maximum damage and 1d3 Dex damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check ends the movement penalty.",
+    const textArray = ["Target suffers maximum damage and 1d3 Dex damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check ends the movement penalty.",
     "Target suffers maximum plus bonus damage again and 1d3 Str damage.<br>Save: A DC 25 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
     "Target suffers maximum damage and 2d6 bleed.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check ends the bleed condition.",
     "Target suffers maximum damage and is knocked prone.<br>Save: A DC 25 Dexterity negates; deals bonus damage instead.<br>Recover: Standing from prone is a move-equivalent action that provokes attacks of opportunity from threatening foes.",
@@ -1236,18 +1234,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = m_piercing[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_piercing.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = m_piercing[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_piercing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "piercing";
+    const difficulty = "major";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -1305,7 +1301,7 @@ $(document).ready(function() {
     "Where Am I?",    
     ];
 
-    const m_bludgeoning = ["Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 25 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.",
+    const textArray = ["Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 25 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.",
     "Target suffers maximum damage and is knocked prone.<br>Save: DC 25 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
     "Target suffers maximum damage plus bonus damage again and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 25 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
     "Target suffers maximum plus bonus damage and 1d6 Dex damage.<br>Save: DC 25 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
@@ -1358,18 +1354,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = m_bludgeoning[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_bludgeoning.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = m_bludgeoning[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_bludgeoning.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "bludgeoning";
+    const difficulty = "major";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -1427,7 +1421,7 @@ $(document).ready(function() {
     "Wild Surge"    
     ];
 
-    const m_magic = ["Maximize all spell variables and target opponent within the spells range suffers 1d4 damage to a random ability score.<br>Save: A DC 25 Constitution negates ability damage. If the spell targeted an opponent, DC 25 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha",
+    const textArray = ["Maximize all spell variables and target opponent within the spells range suffers 1d4 damage to a random ability score.<br>Save: A DC 25 Constitution negates ability damage. If the spell targeted an opponent, DC 25 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha",
     "Maximize all spell variables and target opponent within the spells range suffers double bonus damage again. This is a force effect.<br>Save: A DC 25 Dexterity save negates the arcane blast. If the spell targeted an opponent, a DC 25 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
     "Maximize all spell variables and target opponent within the spells range glows as the spell faerie fire for 1d6 rounds. <br>Save: A DC 25 Resolve save negates the faerie fire. If the spell targeted an opponent, a DC 25 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
     "Maximize all spell variables and up to two target squares within the spells range is covered in arcane goo. Any creature in that square or who enters that square becomes entangled as the web spell.<br>Save: A DC 25 Dexterity check negates the entangled. If the spell targeted an opponent, a DC 25 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Recovery: A DC 25 Strength or Dexterity check allows you to escape the arcane goo entanglement. An opponent may make an attempt to escape at the beginning of their turn each round.",
@@ -1480,18 +1474,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = m_magic[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_magic.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = m_magic[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="major">${getTime()}<br><img src="img\\m_magic.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "magic";
+    const difficulty = "major";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -1549,7 +1541,7 @@ $(document).ready(function() {
     "Wide Open"    
     ];
 
-    const s_slashing = ["Target suffers maximum damage and is blinded permanently.<br>Save: A DC 30 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 20 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%). A DC 30 heal check will fully repair eyesight to normal levels.",
+    const textArray = ["Target suffers maximum damage and is blinded permanently.<br>Save: A DC 30 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 20 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%). A DC 30 heal check will fully repair eyesight to normal levels.",
     "Target suffers maximum damage plus double bonus damage again and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 30 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
     "Target suffers maximum damage plus bonus damage again and is disarmed (1 item).<br>Save: A DC 25 Dexterity negates the disarm; deals bonus damage instead.<br>Recover: Target must expend a move-equivalent action to retrieve its item. This provokes attacks of opportunity from all threatening opponents. <br>Special: If target is not holding any items, deal additional bonus damage instead.",
     "Target suffers maximum damage, loses ear, and 1d2 Cha drain. Target also suffers a -4 penalty on Perception checks until healed.<br>Save: A DC 30 Dexterity negates; deals bonus damage instead.<br>Heal: A DC 20 Heal check halves the Perception check penalties, while a Regeneration spell is required to remove them and heal the ability drain. ",
@@ -1602,18 +1594,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = s_slashing[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_slashing.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = s_slashing[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_slashing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "slashing";
+    const difficulty = "severe";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -1671,7 +1661,7 @@ $(document).ready(function() {
     "Vulnerable Spot"     
     ];
 
-    const s_piercing = ["Target suffers maximum damage plus bonus damage again and 1d4 Dex damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check ends the movement penalty.",
+    const textArray = ["Target suffers maximum damage plus bonus damage again and 1d4 Dex damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check ends the movement penalty.",
     "Target suffers maximum plus bonus damage again and 1d4 Str damage.<br>Save: A DC 25 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
     "Target suffers maximum damage plus bonus damage again and 2d6 bleed.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check ends the bleed condition.",
     "Target suffers maximum damage plus bonus damage again and is knocked prone.<br>Save: A DC 30 Dexterity negates; deals bonus damage instead.<br>Recover: Standing from prone is a move-equivalent action that provokes attacks of opportunity from threatening foes.",
@@ -1724,18 +1714,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = s_piercing[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_piercing.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = s_piercing[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_piercing.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "piercing";
+    const difficulty = "severe";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -1793,7 +1781,7 @@ $(document).ready(function() {
     "Where Am I?"       
     ];
 
-    const s_bludgeoning = ["Target suffers maximum damage plus bonus damage again and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 30 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage again to original target.",
+    const textArray = ["Target suffers maximum damage plus bonus damage again and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 30 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage again to original target.",
     "Target suffers maximum damage plus bonus damage again and is knocked prone and unconscious for 1 round.<br>Save: DC 30 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
     "Target suffers maximum damage plus double bonus damage again and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 30 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
     "Target suffers maximum plus bonus damage and 2d4 Dex damage.<br>Save: DC 30 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
@@ -1846,18 +1834,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = s_bludgeoning[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_bludgeoning.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = s_bludgeoning[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_bludgeoning.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "bludgeoning";
+    const difficulty = "severe";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 
@@ -1915,7 +1901,7 @@ $(document).ready(function() {
     "Wild Surge"      
     ];
 
-    const s_magic = ["Maximize all spell variables and target opponent within the spells range suffers 1d6 damage to a random ability score.<br>Save: A DC 30 Constitution negates ability damage. If the spell targeted an opponent, DC 30 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha",
+    const textArray = ["Maximize all spell variables and target opponent within the spells range suffers 1d6 damage to a random ability score.<br>Save: A DC 30 Constitution negates ability damage. If the spell targeted an opponent, DC 30 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Heal: Rest or restorative magic is needed to heal ability damage.<br><br>D6 - Ability Type Damage<br>1 - Str<br>2 - Dex<br>3 - Con<br>4 - Int<br>5 - Wis<br>6 - Cha",
     "Maximize all spell variables and target opponent within the spells range suffers triple bonus damage again. This is a force effect.<br>Save: A DC 30 Dexterity save negates the arcane blast. If the spell targeted an opponent, a DC 30 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
     "Maximize all spell variables and target opponent within the spells range glows as the spell faerie fire for 1d6+2 rounds. <br>Save: A DC 30 Resolve save negates the faerie fire. If the spell targeted an opponent, a DC 25 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.",
     "Maximize all spell variables and up to four target squares within the spells range is covered in arcane goo. Any creature in that square or who enters that square becomes entangled as the web spell.<br>Save: A DC 30 Dexterity check negates the entangled. If the spell targeted an opponent, a DC 30 Resolve save negates maximized variables; but if the spell would deal damage, deal additional bonus damage instead.<br>Recovery: A DC 30 Strength or Dexterity check allows you to escape the arcane goo entanglement. An opponent may make an attempt to escape at the beginning of their turn each round.",
@@ -1968,18 +1954,16 @@ $(document).ready(function() {
     ];
 
     const randomNumber = getRandomInt(50);
-    const text = s_magic[randomNumber];
-    const title = titleArray[randomNumber];
-    $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_magic.png" class="time"><br>${(randomNumber + 1)}: <em>${title}</em><br>${text}</p>`);
-
-    // for (let i = 0; i < 50; i++) {
-    //   let text = s_magic[i];
-    //   let title = titleArray[i];
-    //   $(".text").prepend(`<p class="severe">${getTime()}<br><img src="img\\s_magic.png" class="time"><br>${(i + 1)}: <em>${title}</em><br>${text}</p>`);
-    // }
-
-    if ($("#popup-check").prop("checked")) {
-      popupText(title, text);
+    const charClass = "magic";
+    const difficulty = "severe";
+    
+    if ($("#debug").prop("checked")) {
+      debug(titleArray, textArray, charClass, difficulty);
+    } else {
+      effect(titleArray, textArray, charClass, randomNumber, difficulty);
+      if ($("#popup-check").prop("checked")) {
+          popupText(titleArray, textArray, randomNumber);
+        }
     }
   });
 

@@ -17,9 +17,19 @@
       </div>
     </div>
     <form id="form">
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="popup-check" checked>
-        <label class="form-check-label" for="popup-check">Display Pop-up Window with Effect Text</label>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="popup-check" checked>
+            <label class="form-check-label" for="popup-check">Display Pop-up Window with Effect Text</label>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="debug">
+            <label class="form-check-label" for="debug">Debug/Error Check Mode</label>
+          </div>
+        </div>
       </div>
       <div class="stealth-border">
         <div class="backing-image">
@@ -28,19 +38,19 @@
               <p class="table-header">Fumbles</p>
               <div class="center fumble-image">
                 <div class="row-border">
-                  <button type="button" class="btn" id="g_melee"><img class="button-image" src="img/g_melee.png"></button>
+                  <button type="button" class="btn" id="g_melee"><img class="button-image" src="img/fumble_melee.png"></button>
                   <p class="button-header">Melee</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="g_ranged"><img class="button-image" src="img/g_ranged.png"></button>
+                  <button type="button" class="btn" id="g_ranged"><img class="button-image" src="img/fumble_ranged.png"></button>
                   <p class="button-header">Ranged</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="g_natural"><img class="button-image" src="img/g_natural.png"></button>
+                  <button type="button" class="btn" id="g_natural"><img class="button-image" src="img/fumble_natural.png"></button>
                   <p class="button-header">Natural</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="g_magic"><img class="button-image" src="img/g_magic.png"></button>
+                  <button type="button" class="btn" id="g_magic"><img class="button-image" src="img/fumble_magic.png"></button>
                   <p class="button-header">Magic</p>
                 </div>
               </div>
@@ -49,19 +59,19 @@
               <p class="table-header"><span title="DC 20">Minor</span></p>
               <div class="center">
                 <div class="row-border">
-                  <button type="button" class="btn" id="b_slashing"><img class="button-image" src="img/b_slashing.png"></button>
+                  <button type="button" class="btn" id="b_slashing"><img class="button-image" src="img/minor_slashing.png"></button>
                   <p class="button-header">Slashing</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="b_piercing"><img class="button-image" src="img/b_piercing.png"></button>
+                  <button type="button" class="btn" id="b_piercing"><img class="button-image" src="img/minor_piercing.png"></button>
                   <p class="button-header">Piercing</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="b_bludgeoning"><img class="button-image" src="img/b_bludgeoning.png"></button>
+                  <button type="button" class="btn" id="b_bludgeoning"><img class="button-image" src="img/minor_bludgeoning.png"></button>
                   <p class="button-header">Bludgeoning</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="b_magic"><img class="button-image" src="img/b_magic.png"></button>
+                  <button type="button" class="btn" id="b_magic"><img class="button-image" src="img/minor_magic.png"></button>
                   <p class="button-header">Magic</p>
                 </div>
               </div>
@@ -70,19 +80,19 @@
               <p class="table-header"><span title="DC 30">Major</span></p>
               <div class="center">
                 <div class="row-border">
-                  <button type="button" class="btn" id="m_slashing"><img class="button-image" src="img/m_slashing.png"></button>
+                  <button type="button" class="btn" id="m_slashing"><img class="button-image" src="img/major_slashing.png"></button>
                   <p class="button-header">Slashing</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="m_piercing"><img class="button-image" src="img/m_piercing.png"></button>
+                  <button type="button" class="btn" id="m_piercing"><img class="button-image" src="img/major_piercing.png"></button>
                   <p class="button-header">Piercing</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="m_bludgeoning"><img class="button-image" src="img/m_bludgeoning.png"></button>
+                  <button type="button" class="btn" id="m_bludgeoning"><img class="button-image" src="img/major_bludgeoning.png"></button>
                   <p class="button-header">Bludgeoning</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="m_magic"><img class="button-image" src="img/m_magic.png"></button>
+                  <button type="button" class="btn" id="m_magic"><img class="button-image" src="img/major_magic.png"></button>
                   <p class="button-header">Magic</p>
                 </div>
               </div>
@@ -91,19 +101,19 @@
               <p class="table-header"><span title="DC 40">Severe</span></p>
               <div class="center">
                 <div class="row-border">
-                  <button type="button" class="btn" id="s_slashing"><img class="button-image" src="img/s_slashing.png"></button>
+                  <button type="button" class="btn" id="s_slashing"><img class="button-image" src="img/severe_slashing.png"></button>
                   <p class="button-header">Slashing</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="s_piercing"><img class="button-image" src="img/s_piercing.png"></button>
+                  <button type="button" class="btn" id="s_piercing"><img class="button-image" src="img/severe_piercing.png"></button>
                   <p class="button-header">Piercing</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="s_bludgeoning"><img class="button-image" src="img/s_bludgeoning.png"></button>
+                  <button type="button" class="btn" id="s_bludgeoning"><img class="button-image" src="img/severe_bludgeoning.png"></button>
                   <p class="button-header">Bludgeoning</p>
                 </div>
                 <div class="row-border">
-                  <button type="button" class="btn" id="s_magic"><img class="button-image" src="img/s_magic.png"></button>
+                  <button type="button" class="btn" id="s_magic"><img class="button-image" src="img/severe_magic.png"></button>
                   <p class="button-header">Magic</p>
                 </div>
               </div>
