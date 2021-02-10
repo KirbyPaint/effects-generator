@@ -170,8 +170,11 @@ body {
 }
 
 .popup-title-text {
+  display:table;
+  margin:0 auto;
   text-decoration: underline;
   font-family: 'moriaregular';
+  font-size: xx-large;
   color: white;
   text-shadow: 2px 2px 8px #FF0000,
   1px 0px 1px black,
