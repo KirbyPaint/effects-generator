@@ -57,14 +57,38 @@ body {
   border-color: green;
 }
 
+.minor a:link{
+  color: darkgreen;
+}
+
+.minor a:visited{
+  color: darkgreen;
+}
+
 .major {
   background-color: rgb(236, 238, 144);
   border-color: goldenrod;
 }
 
+.major a:link{
+  color: darkgoldenrod;
+}
+
+.major a:visited{
+  color: darkgoldenrod;
+}
+
 .severe {
   background-color: rgb(238, 144, 144);
   border-color: red;
+}
+
+.severe a:link{
+  color: darkred;
+}
+
+.severe a:visited{
+  color: darkred;
 }
 
 .time {
