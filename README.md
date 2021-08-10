@@ -5,6 +5,8 @@
 #### By _**Ash Porter (KirbyPaint)**_
 #### Generated list effects provided by _Forest Jennings_
 
+<img src="https://media.discordapp.net/attachments/799876599372840964/842464864642793492/unknown.png?width=980&height=676">
+
 ## Description
 
 _The purpose of this website is to generate critical success and fumble effects for our D&D games. It is a personal project that my roommate has asked me to work on in my off time._  
