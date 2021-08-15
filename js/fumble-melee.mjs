@@ -51,10 +51,7 @@ export const fumbleMeleeTitle = ["All Or Nothing",
 ];
 
 export const fumbleMeleeText = [
-  `Your attack fails and you suffer a -1 penalty on attack rolls until you score a critical hit.
-Save: Resolve DC 20 negates.
-Recover: You must succeed at a Resolve save or score a critical hit to end this effect. You may re-roll the save each round.
-Special: Each attack you miss your target increases the penalty by -1.`,
+  "Your attack fails and you suffer a -1 penalty on attack rolls until you score a critical hit.<br>Save: Resolve DC 20 negates.<br>Recover: You must succeed at a Resolve save or score a critical hit to end this effect. You may re-roll the save each round.<br>Special: Each attack you miss your target increases the penalty by -1.",
   "Your attack hits and deals damage to your armor instead of your target.<br>Save: Dexterity DC 20 negates.<br>Recover: A Craft DC 20 check is needed to repair the damage.<br>Special: If you do not wear armor, damage is dealt to shield or to yourself instead.",
   "Your attack fails and all of your enemies are considered to have concealment from you (20% miss chance) for 1d4 rounds.<br>Save: Resolve DC 20 negates.<br>Recover: You may continue to make a Resolve save each round you are affected to end the duration.",
   "Your attack fails and you take a -2 penalty to defense rolls for 1d4 rounds.<br>Save: Dexterity DC 20 negates.<br>Recover: You must expend a greater action to recover.<br>Special: If using a two-handed weapon, add +1 round to the duration of the penalty.",
