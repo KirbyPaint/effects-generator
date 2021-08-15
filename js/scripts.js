@@ -23,17 +23,8 @@ function getRandomInt(max) {
 }
 
 function getTime() {
-  let time = new Date().getTime();
-  let date = new Date(time);
-  const dateArray = date.toString();
-  let hourSlice = dateArray.slice(16, 18);
-  const minsecSlice = dateArray.slice(18, 24);
-  if (parseInt(hourSlice.toString()) > 12) {
-    hourSlice -= 12;
-  }
-
-  return hourSlice.toString() + minsecSlice;                  // US Time
-  // return "<span class=\"time\">" + timeSlice + "</span>";  // 24 hr time
+  const time = new Date();
+  return time.toLocaleString('en-US', { hour: 'numeric', hour12: true, minute: '2-digit', second: '2-digit' });
 }
 
 function effect(title, text, charClass, randomNumber, difficulty) {
