@@ -1,4 +1,4 @@
-const majorSlashingTitle = ["Across The Eyes",
+export const majorSlashingTitle = ["Across The Eyes",
   "Armor Damage",
   "Bad Parry",
   "Badly Hacked Ear",
@@ -50,7 +50,7 @@ const majorSlashingTitle = ["Across The Eyes",
   "Wide Open"
 ];
 
-const majorSlashingText = ["Target suffers maximum damage and is blinded for 1d4 minutes.<br>Save: A DC 25 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 15 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%). A DC 25 heal check will fully repair eyesight to normal levels.",
+export const majorSlashingText = ["Target suffers maximum damage and is blinded for 1d4 minutes.<br>Save: A DC 25 Dexterity save negates; deals bonus damage instead.<br>Heal: A Heal check DC 15 repairs sight somewhat, but the recipient treats all targets as though they have concealment (20%). A DC 25 heal check will fully repair eyesight to normal levels.",
   "Target suffers maximum damage plus bonus damage again, and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 25 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
   "Target suffers maximum damage and is disarmed (1 item).<br>Save: A DC 25 Dexterity negates the disarm; deals bonus damage instead.<br>Recover: Target must expend a move-equivalent action to retrieve its item. This provokes attacks of opportunity from all threatening opponents. <br>Special: If target is not holding any items, deal additional bonus damage instead.",
   "Target suffers maximum damage and 1 Charisma drain. Target also suffers a -4 penalty on Perception checks until healed.<br>Save: A DC 25 Dexterity negates; deals bonus damage instead.<br>Heal: A DC 15 Heal check halves the Perception check penalties, while a DC 25 removes them. Restorative magic is required to heal ability drain.",

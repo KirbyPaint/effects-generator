@@ -1,4 +1,4 @@
-export const fumble_melee_title = ["All Or Nothing",
+export const fumbleMeleeTitle = ["All Or Nothing",
   "Armor Smash",
   "Attack The Darkness",
   "Awkward Attack",
@@ -50,7 +50,7 @@ export const fumble_melee_title = ["All Or Nothing",
   "How In The World?"
 ];
 
-export const fumble_melee_text = [
+export const fumbleMeleeText = [
   `Your attack fails and you suffer a -1 penalty on attack rolls until you score a critical hit.
 Save: Resolve DC 20 negates.
 Recover: You must succeed at a Resolve save or score a critical hit to end this effect. You may re-roll the save each round.

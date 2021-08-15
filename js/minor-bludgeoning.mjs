@@ -1,4 +1,4 @@
-const minorBludgeoningTitle = ["2 For 1",
+export const minorBludgeoningTitle = ["2 For 1",
   "And Stay Down!",
   "Armor Dent",
   "Back Breaker",
@@ -50,7 +50,7 @@ const minorBludgeoningTitle = ["2 For 1",
   "Where Am I?",
 ];
 
-const minorBludgeoningText = ["Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.",
+export const minorBludgeoningText = ["Target suffers maximum damage and you deal normal damage to one adjacent target.<br>Save: Adjacent target may make a DC 20 Dexterity save to negate.<br>Special: If there are no adjacent targets, deal bonus damage to original target.",
   "Target suffers maximum damage and is knocked prone.<br>Save: DC 20 Constitution negates; deals bonus damage instead.<br>Recover: A move-equivalent action is required to stand from prone. This provokes attacks of opportunity from threatening opponents.",
   "Target suffers maximum damage and attack also deals damage to target’s armor (hardness applies).<br>Save: DC 20 Dexterity negates; deals bonus damage to the target instead.<br>Special: If target does not wear armor, damage is dealt to shield or deal additional bonus damage again to target instead.",
   "Target suffers maximum damage plus bonus damage and 1d4 Dexterity damage.<br>Save: DC 20 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",

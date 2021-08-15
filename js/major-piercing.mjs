@@ -1,4 +1,4 @@
-const majorPiercingTitle = ["Achilles’ Heel",
+export const majorPiercingTitle = ["Achilles’ Heel",
   "Bicep Wound",
   "Bleeder",
   "Blown Back",
@@ -50,7 +50,7 @@ const majorPiercingTitle = ["Achilles’ Heel",
   "Vulnerable Spot"
 ];
 
-const majorPiercingText = ["Target suffers maximum damage and 1d3 Dexterity damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check ends the movement penalty.",
+export const majorPiercingText = ["Target suffers maximum damage and 1d3 Dexterity damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check ends the movement penalty.",
   "Target suffers maximum damage plus bonus damage again and 1d3 Strength damage.<br>Save: A DC 25 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
   "Target suffers maximum damage and 2d6 bleed.<br>Save: A DC 25 Constitution negates; deals bonus damage instead.<br>Heal: A DC 25 Heal check ends the bleed condition.",
   "Target suffers maximum damage and is knocked prone.<br>Save: A DC 25 Dexterity negates; deals bonus damage instead.<br>Recover: Standing from prone is a move-equivalent action that provokes attacks of opportunity from threatening foes.",

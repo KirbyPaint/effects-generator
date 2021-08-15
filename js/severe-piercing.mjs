@@ -1,4 +1,4 @@
-const severePiercingTitle = ["Achilles’ Heel",
+export const severePiercingTitle = ["Achilles’ Heel",
   "Bicep Wound",
   "Bleeder",
   "Blown Back",
@@ -50,7 +50,7 @@ const severePiercingTitle = ["Achilles’ Heel",
   "Vulnerable Spot"
 ];
 
-const severePiercingText = ["Target suffers maximum damage plus bonus damage again and 1d4 Dexterity damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check ends the movement penalty.",
+export const severePiercingText = ["Target suffers maximum damage plus bonus damage again and 1d4 Dexterity damage. Target’s movement speeds are reduced by half until healed.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check ends the movement penalty.",
   "Target suffers maximum damage plus bonus damage again and 1d4 Strength damage.<br>Save: A DC 25 Constitution negates; deals additional bonus damage instead.<br>Heal: Rest or restoration magic.",
   "Target suffers maximum damage plus bonus damage again and 2d6 bleed.<br>Save: A DC 30 Constitution negates; deals bonus damage instead.<br>Heal: A DC 30 Heal check ends the bleed condition.",
   "Target suffers maximum damage plus bonus damage again and is knocked prone.<br>Save: A DC 30 Dexterity negates; deals bonus damage instead.<br>Recover: Standing from prone is a move-equivalent action that provokes attacks of opportunity from threatening foes.",
